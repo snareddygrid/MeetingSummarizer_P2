@@ -1,0 +1,9 @@
+.DS_Store/
+.pycache_local/
+run.sh
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+experiments/t5_small_lora
+data/

@@ -1,0 +1,32 @@
+{
+  "BART-FULL": {
+    "path": "experiments/bart_base_full",
+    "rougeL": 41.33,
+    "type": "Full Fine-Tuning",
+    "architecture": "BART"
+  },
+  "BART-LoRA": {
+    "path": "experiments/bart_base_lora",
+    "rougeL": 41.49,
+    "type": "LoRA",
+    "architecture": "BART"
+  },
+  "PEGASUS-LoRA": {
+    "path": "experiments/pegasus_lora",
+    "rougeL": 42.95,
+    "type": "LoRA",
+    "architecture": "PEGASUS"
+  },
+  "FLAN-T5-BASE": {
+    "path": "experiments/flan_t5_base",
+    "rougeL": 40.61,
+    "type": "Full Fine-Tuning",
+    "architecture": "T5"
+  },
+  "T5-SMALL": {
+    "path": "experiments/t5_small_optimized",
+    "rougeL": 38.14,
+    "type": "Full Fine-Tuning",
+    "architecture": "T5"
+  }
+}

@@ -1,0 +1,262 @@
+[
+    {
+        "model": "PEGASUS-LoRA",
+        "summary": "Chaitanya is having meeting at 10:00 am today."
+    },
+    {
+        "model": "BART-FULL",
+        "summary": "sumith and Chaitanya are having a meeting today at 10:00 am."
+    },
+    {
+        "model": "BART-LoRA",
+        "summary": "sumith and Chaitanya are meeting today at 10:00 am."
+    },
+    {
+        "model": "FLAN-T5-BASE",
+        "summary": "Sumith and Chaitanya are having a meeting at 10:00 am today."
+    },
+    {
+        "model": "T5-SMALL",
+        "summary": "chaitanya and sumith have a meeting at 10:00 am today."
+    },
+    {
+        "model": "PEGASUS-LoRA",
+        "summary": "Chaitanya is having meeting at 10:00 am today."
+    },
+    {
+        "model": "PEGASUS-LoRA",
+        "summary": "Chaitanya is having meeting at 10:00 am today."
+    },
+    {
+        "model": "PEGASUS-LoRA",
+        "summary": "Chaitanya and sumith are meeting at 10:00 am today."
+    },
+    {
+        "model": "PEGASUS-LoRA",
+        "summary": "Chaitanya and sumith are having a meeting at 10:00."
+    },
+    {
+        "model": "BART-FULL",
+        "summary": "sumith and Chaitanya are meeting today at 10:00 am in zoom."
+    },
+    {
+        "model": "BART-LoRA",
+        "summary": "Sumith and Chaitanya are meeting today at 10:00 am in zoom."
+    },
+    {
+        "model": "FLAN-T5-BASE",
+        "summary": "Sumith and chaitanya are having a meeting today at 10:00 am in zoom."
+    },
+    {
+        "model": "T5-SMALL",
+        "summary": "chaitanya and sumith have a meeting at 10:00 am today."
+    },
+    {
+        "model": "PEGASUS-LoRA",
+        "summary": "Chaitanya and sumith are having a meeting at 10:00."
+    },
+    {
+        "model": "PEGASUS-LoRA",
+        "summary": "Chaitanya is having meeting at 10:00 am today."
+    },
+    {
+        "model": "BART-LoRA",
+        "summary": "sumith and Chaitanya are meeting today at 10:00 am."
+    },
+    {
+        "model": "BART-LoRA",
+        "summary": "sumith and Chaitanya are meeting today at 10:00 am."
+    },
+    {
+        "model": "BART-FULL",
+        "summary": "sumith and Chaitanya are having a meeting today at 10:00 am."
+    },
+    {
+        "model": "BART-FULL",
+        "summary": "sumith and Chaitanya are having a meeting today at 10:00 am."
+    },
+    {
+        "model": "BART-FULL",
+        "summary": "Alex, Sam, Jordan and Dev are two weeks out from the beta launch. The core endpoints are live, but there is a 3-second delay when pulling real-time data visualizations. The server maintenance is on Friday at midnight, so don't plan any late-night deployments."
+    },
+    {
+        "model": "PEGASUS-LoRA",
+        "summary": "Alex, Sam, Jordan and PM are meeting to review progress on the new app dashboard and address blockers."
+    },
+    {
+        "model": "BART-FULL",
+        "summary": "Alex, Sam, Jordan and Jordan are working on the new app dashboard and address blockers. They are two weeks out from the beta launch. Sam is seeing some latency issues when pulling real-time data visualizations. Jordan will send out the notes. The server maintenance is on Friday at midnight."
+    },
+    {
+        "model": "PEGASUS-LoRA",
+        "summary": "Maya has stayed late three nights this week. She needs to submit 90% of the proposal to the client."
+    },
+    {
+        "model": "BART-FULL",
+        "summary": "Maya has stayed late three nights this week because of the 90% rule in project management."
+    },
+    {
+        "model": "BART-FULL",
+        "summary": "Maya has stayed late three nights this week. Her proposal is not perfect. Maya is closing the laptop."
+    },
+    {
+        "model": "BART-LoRA",
+        "summary": "Maya has stayed late three nights this week. David (Mentor) is worried that the proposal is not perfect. Maya is closing the laptop."
+    },
+    {
+        "model": "FLAN-T5-BASE",
+        "summary": "Maya has stayed late three nights this week. She feels that if the proposal isn't perfect, the whole project is going to fail."
+    },
+    {
+        "model": "T5-SMALL",
+        "summary": "Maya's project is going to fail. She's been late three nights this week. "
+    },
+    {
+        "model": "T5-SMALL",
+        "summary": "Alex ran the test batch of court transcripts through the standard model. The base model sees a 50-page transcript and tries to find the most important sentences. The LoRA layer is similar to giving the base Pegasus model a Law Degree."
+    },
+    {
+        "model": "PEGASUS-LoRA",
+        "summary": "The LoRA version of the Pegasus-LoRA model is performing better than the standard model. It's lightweight, fast, and it's ready for the beta."
+    },
+    {
+        "model": "PEGASUS-LoRA",
+        "summary": "Amanda baked cookies and will bring them to Jerry tomorrow."
+    },
+    {
+        "model": "PEGASUS-LoRA",
+        "summary": "John and Cassandra are going to have a beer this week. Cassandra will help John with his homework."
+    },
+    {
+        "model": "BART-FULL",
+        "summary": "Cassandra will check if there is any homework for tomorrow. John couldn't be there, because he was busy and his boss was trying to piss him off. He doesn't have any support from others. Cassandra and John will meet for a beer this week after classes."
+    },
+    {
+        "model": "BART-LoRA",
+        "summary": "Cassandra will check the homework for John tomorrow. John's boss is trying to piss him off. Cassandra will drive him home and they will go to a bar."
+    },
+    {
+        "model": "FLAN-T5-BASE",
+        "summary": "Cassandra will check the homework for John in 20 minutes. John's boss is trying to piss him off. John will drive him home and they'll go to a bar this week. John got the homework. It's page 15 ex. 2 and 3, and he asked the others to study another chapter, especially the vocabulary from the very first pages. They'll continue on Monday."
+    },
+    {
+        "model": "T5-SMALL",
+        "summary": "Cassandra will check her homework for John in 20 minutes. John will drive her home and they will go to a bar on Monday."
+    },
+    {
+        "model": "BART-FULL",
+        "summary": "Neville is on vacation and Tina is mad at him. Neville got married on September 17. Wyatt will ask his wife."
+    },
+    {
+        "model": "PEGASUS-LoRA",
+        "summary": "Neville and Tina are on vacation. Neville doesn't remember the date he got married."
+    },
+    {
+        "model": "BART-FULL",
+        "summary": "Neville is on vacation and Tina is mad at him. Neville got married on September 17. Wyatt will ask his wife."
+    },
+    {
+        "model": "BART-LoRA",
+        "summary": "Neville got married on September 17. Tina is mad at him. Wyatt will ask his wife."
+    },
+    {
+        "model": "FLAN-T5-BASE",
+        "summary": "Neville got married on September 17. Wyatt will ask his wife."
+    },
+    {
+        "model": "T5-SMALL",
+        "summary": "Neville got married on September 17th. Tina is mad at her."
+    },
+    {
+        "model": "T5-SMALL",
+        "summary": "Neville got married on September 17th. Tina is mad at her."
+    },
+    {
+        "model": "BART-LoRA",
+        "summary": "Neville got married on September 17. Tina is mad at him. Wyatt will ask his wife."
+    },
+    {
+        "model": "BART-FULL",
+        "summary": "Neville is on vacation and Tina is mad at him. Neville got married on September 17. Wyatt will ask his wife."
+    },
+    {
+        "model": "PEGASUS-LoRA",
+        "summary": "Neville and Tina are on vacation. Neville doesn't remember the date he got married."
+    },
+    {
+        "model": "PEGASUS-LoRA",
+        "summary": "Sarah found a song on YouTube and she thinks James will like it. "
+    },
+    {
+        "model": "BART-FULL",
+        "summary": "Sarah found an Instrumental song on youtube and she thinks James will like it. James knows the song because he plays it over and over. "
+    },
+    {
+        "model": "BART-LoRA",
+        "summary": "Sarah found a song on youtube. James knows the lyrics to all of the songs on her playlist."
+    },
+    {
+        "model": "FLAN-T5-BASE",
+        "summary": "Sarah found a song on youtube and she can't stop playing it over and over. James knows the lyrics to all of the songs on his playlist. Sarah used to like the song but now it reminds her of bad memories."
+    },
+    {
+        "model": "T5-SMALL",
+        "summary": "Sarah found a song on James's playlist. It reminds her of bad memories."
+    },
+    {
+        "model": "BART-FULL",
+        "summary": "Sarah found an Instrumental song on youtube and she thinks James will like it. James knows the song because he plays it over and over. "
+    },
+    {
+        "model": "BART-FULL",
+        "summary": "Macca has done ice climbing in Iceland. He enjoyed it very much."
+    },
+    {
+        "model": "PEGASUS-LoRA",
+        "summary": "Macca has just done ice climbing in Iceland."
+    },
+    {
+        "model": "BART-LoRA",
+        "summary": "Macca has never done ice climbing before. He is in Reykjavik."
+    },
+    {
+        "model": "FLAN-T5-BASE",
+        "summary": "Macca has never done ice climbing before. He is in Iceland. The landscapes were magnificent."
+    },
+    {
+        "model": "T5-SMALL",
+        "summary": "Macca has never done ice climbing before. She's not far from Reykjavik. She is in Iceland."
+    },
+    {
+        "model": "BART-FULL",
+        "summary": "Macca has done ice climbing in Iceland. He enjoyed it very much."
+    },
+    {
+        "model": "BART-FULL",
+        "summary": "Alex will share the updated plan today. The launch date is April 15."
+    },
+    {
+        "model": "BART-FULL",
+        "summary": "Alex will share the updated plan today. The launch date is April 15."
+    },
+    {
+        "model": "BART-FULL",
+        "summary": "The launch date is April 15. Alex will share the updated plan today."
+    },
+    {
+        "model": "BART-FULL",
+        "summary": "The launch date is April 15. Alex will share the updated plan today."
+    },
+    {
+        "model": "PEGASUS-LoRA",
+        "summary": "Priya and Alex will launch on April 15. Alex will share the updated plan today."
+    },
+    {
+        "model": "T5-SMALL",
+        "summary": "Alex will share the updated plan today."
+    },
+    {
+        "model": "FLAN-T5-BASE",
+        "summary": "Priya and Alex will finalize the launch date on April 15."
+    }
+]
