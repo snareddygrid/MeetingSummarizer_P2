@@ -25,19 +25,19 @@ End‑to‑end workflow for meeting‑style dialogue summarization. The repo inc
 ├── configs/
 │   └── models.json                # Model registry with scores/paths
 ├── data/
-│   ├── raw/                       # SAMSum saved_to_disk splits
-│   ├── processed/                 # Tokenized generic (FLAN/T5)
-│   ├── processed_bart/            # Tokenized for BART
-│   └── processed_pegasus_speaker/ # Tokenized for Pegasus speaker-aware
+│   ├── raw/                       # SAMSum saved_to_disk splits (gitignored)
+│   ├── processed/                 # Tokenized generic (FLAN/T5, gitignored)
+│   ├── processed_bart/            # Tokenized for BART (gitignored)
+│   └── processed_pegasus_speaker/ # Tokenized for Pegasus speaker-aware (gitignored)
 ├── experiments/
-│   ├── bart_base_full/            # Full FT checkpoints/metrics
-│   ├── bart_base_lora/            # LoRA checkpoints/metrics
-│   ├── flan_t5_base/              # FLAN-T5 base runs
-│   ├── pegasus_lora/              # Pegasus LoRA runs
-│   └── t5_small_lora/             # T5 small LoRA runs
+│   ├── bart_base_full/            # (local) checkpoints/metrics
+│   ├── bart_base_lora/            # (local) checkpoints/metrics
+│   ├── flan_t5_base/              # (local) checkpoints/metrics
+│   ├── pegasus_lora/              # (local) checkpoints/metrics
+│   └── t5_small_lora/             # (local) checkpoints/metrics
 ├── outputs/
-│   ├── plots/                     # Loss/ROUGE charts
-│   └── history/history.json       # Streamlit generation history
+│   ├── plots/                     # Loss/ROUGE charts (gitignored)
+│   └── history/history.json       # Streamlit generation history (gitignored)
 ├── notebooks/                     # Exploration notebooks
 ├── src/
 │   ├── data_loader.py             # Download SAMSum
@@ -54,6 +54,7 @@ End‑to‑end workflow for meeting‑style dialogue summarization. The repo inc
 │   ├── generate_plots.py          # Plot creation
 │   ├── inference.py               # Generation helper
 │   └── model_loader.py            # Registry-driven loading + device select
+├── venv/                          # Virtual env (gitignored)
 ├── requirements.txt
 └── README.md
 ```
@@ -134,6 +135,7 @@ streamlit run app/streamlit_app.py
 }
 ```
 Add new trained runs here to surface them in the UI and dashboards.
+Note: checkpoints referenced in `path` should exist locally in `experiments/`; they are not committed to git.
 
 ## 💾 Datasets & Storage
 - `data/raw/` — HuggingFace `save_to_disk` output.
