@@ -66,6 +66,46 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+## 🚀 Quick Start (just run the UI)
+```bash
+# 1) Clone
+git clone <your-repo-url> meeting-summarizer
+cd meeting-summarizer
+
+# 2) Create & activate venv
+python3 -m venv venv
+source venv/bin/activate
+
+# 3) Install deps
+pip install -r requirements.txt
+
+# 4) Launch the UI
+streamlit run app/streamlit_app.py
+```
+
+Notes:
+- The app loads models from `experiments/*` listed in `configs/models.json`; inference doesn’t require `data/`.
+- If you pulled checkpoints, you can stop here—no data download/preprocess needed for UI-only use.
+- Large folders `data/`, `outputs/`, `venv/` are gitignored; regenerate locally as needed.
+
+## 🔁 Retraining (when you want to fine-tune again)
+```bash
+# Download SAMSum
+python src/data_loader.py
+
+# Preprocess for your target model(s)
+python src/preprocess.py                  # FLAN/T5
+python src/preprocess_bart.py             # BART
+python src/preprocess_pegasus_speaker.py  # Pegasus speaker-aware
+
+# Train (example)
+python src/train_bart_base_lora.py
+
+# Evaluate / plot
+python src/evaluation_bart_lora.py
+python src/generate_plots.py
+```
+
 ## 📥 Data
 1) Download SAMSum locally:
 ```bash
