@@ -36,8 +36,8 @@ End‑to‑end workflow for meeting‑style dialogue summarization. The repo inc
 │   ├── pegasus_lora/              # (local) checkpoints/metrics
 │   └── t5_small_lora/             # (local) checkpoints/metrics
 ├── outputs/
-│   ├── plots/                     # Loss/ROUGE charts (gitignored)
-│   └── history/history.json       # Streamlit generation history (gitignored)
+│   ├── plots/                     # Loss/ROUGE charts 
+│   └── history/history.json       # Streamlit generation history 
 ├── notebooks/                     # Exploration notebooks
 ├── src/
 │   ├── data_loader.py             # Download SAMSum
