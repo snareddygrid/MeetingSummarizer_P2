@@ -1,6 +1,6 @@
 <p align="center">
-  <strong>🧠 Meeting Summarizer</strong><br>
-  <sub>Summarize meetings, compare models, ship insights.</sub>
+  <strong style="font-size: 2.2rem;">Meeting Summarizer</strong><br>
+  <sub style="font-size: 1.05rem;">Summarize meetings, compare models, ship insights.</sub>
 </p>
 <p align="center">
   <img alt="Python" src="https://img.shields.io/badge/Python-3.9%2B-3776AB.svg">
@@ -18,47 +18,6 @@ End‑to‑end workflow for meeting‑style dialogue summarization. The repo inc
 - 🗂️ Model registry: `configs/models.json` lists trained checkpoints with ROUGE scores and is used by the UI.
 - 🎛️ Streamlit app: pick a model, paste a conversation, and generate summaries; view model insights and comparison dashboard.
 
-## 🗂️ Repository Structure
-```
-├── app/
-│   └── streamlit_app.py           # Streamlit UI
-├── configs/
-│   └── models.json                # Model registry with scores/paths
-├── data/
-│   ├── raw/                       # SAMSum saved_to_disk splits (gitignored)
-│   ├── processed/                 # Tokenized generic (FLAN/T5, gitignored)
-│   ├── processed_bart/            # Tokenized for BART (gitignored)
-│   └── processed_pegasus_speaker/ # Tokenized for Pegasus speaker-aware (gitignored)
-├── experiments/
-│   ├── bart_base_full/            # (local) checkpoints/metrics
-│   ├── bart_base_lora/            # (local) checkpoints/metrics
-│   ├── flan_t5_base/              # (local) checkpoints/metrics
-│   ├── pegasus_lora/              # (local) checkpoints/metrics
-│   └── t5_small_lora/             # (local) checkpoints/metrics
-├── outputs/
-│   ├── plots/                     # Loss/ROUGE charts 
-│   └── history/history.json       # Streamlit generation history 
-├── notebooks/                     # Exploration notebooks
-├── src/
-│   ├── data_loader.py             # Download SAMSum
-│   ├── preprocess.py              # Generic preprocessing
-│   ├── preprocess_bart.py         # BART-specific preprocessing
-│   ├── preprocess_pegasus_speaker.py
-│   ├── train_bart_base.py         # Training scripts (full/LoRA variants)
-│   ├── train_bart_base_lora.py
-│   ├── train_flan_t5_base.py
-│   ├── train_t5_small.py
-│   ├── train_lora_t5_small.py
-│   ├── train_pegasus_lora.py
-│   ├── evaluation*.py             # Evaluation scripts
-│   ├── generate_plots.py          # Plot creation
-│   ├── inference.py               # Generation helper
-│   └── model_loader.py            # Registry-driven loading + device select
-├── venv/                          # Virtual env (gitignored)
-├── requirements.txt
-└── README.md
-```
-
 ## Setup
 ```bash
 python3 -m venv venv
@@ -71,6 +30,13 @@ Ensure Git LFS is installed (once per machine):
 ```bash
 git lfs install
 ```
+If Git LFS is missing, install via Homebrew (macOS):
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew install git-lfs
+git lfs install
+```
+On Linux/Windows, install Git LFS from https://git-lfs.com
 
 ```bash
 # 1) Clone
@@ -112,6 +78,48 @@ python src/train_bart_base_lora.py
 # Evaluate / plot
 python src/evaluation_bart_lora.py
 python src/generate_plots.py
+```
+
+
+## 🗂️ Repository Structure
+```
+├── app/
+│   └── streamlit_app.py           # Streamlit UI
+├── configs/
+│   └── models.json                # Model registry with scores/paths
+├── data/
+│   ├── raw/                       # SAMSum saved_to_disk splits (gitignored)
+│   ├── processed/                 # Tokenized generic (FLAN/T5, gitignored)
+│   ├── processed_bart/            # Tokenized for BART (gitignored)
+│   └── processed_pegasus_speaker/ # Tokenized for Pegasus speaker-aware (gitignored)
+├── experiments/
+│   ├── bart_base_full/            # (local) checkpoints/metrics
+│   ├── bart_base_lora/            # (local) checkpoints/metrics
+│   ├── flan_t5_base/              # (local) checkpoints/metrics
+│   ├── pegasus_lora/              # (local) checkpoints/metrics
+│   └── t5_small_lora/             # (local) checkpoints/metrics
+├── outputs/
+│   ├── plots/                     # Loss/ROUGE charts 
+│   └── history/history.json       # Streamlit generation history 
+├── notebooks/                     # Exploration notebooks
+├── src/
+│   ├── data_loader.py             # Download SAMSum
+│   ├── preprocess.py              # Generic preprocessing
+│   ├── preprocess_bart.py         # BART-specific preprocessing
+│   ├── preprocess_pegasus_speaker.py
+│   ├── train_bart_base.py         # Training scripts (full/LoRA variants)
+│   ├── train_bart_base_lora.py
+│   ├── train_flan_t5_base.py
+│   ├── train_t5_small.py
+│   ├── train_lora_t5_small.py
+│   ├── train_pegasus_lora.py
+│   ├── evaluation*.py             # Evaluation scripts
+│   ├── generate_plots.py          # Plot creation
+│   ├── inference.py               # Generation helper
+│   └── model_loader.py            # Registry-driven loading + device select
+├── venv/                          # Virtual env (gitignored)
+├── requirements.txt
+└── README.md
 ```
 
 ## 📥 Data
