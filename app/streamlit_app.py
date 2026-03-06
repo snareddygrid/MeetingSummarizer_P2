@@ -265,7 +265,7 @@ def render_theme():
 
         .hero-title {
             margin: 0;
-            color: var(--ink-main);
+            color: #0f172a !important;
             font-size: 1.7rem;
             font-weight: 800;
             letter-spacing: 0.01em;
@@ -275,7 +275,7 @@ def render_theme():
 
         .hero-subtitle {
             margin: 0.45rem auto 0 auto;
-            color: var(--ink-soft);
+            color: #0f172a !important;
             font-size: 0.95rem;
             line-height: 1.4;
             width: fit-content;
@@ -457,7 +457,7 @@ def render_theme():
 
         .example-title {
             margin: 0 0 0.55rem 0;
-            color: #64748b;
+            color: #0f172a !important;
             font-size: 0.8rem;
             text-transform: uppercase;
             letter-spacing: 0.06em;
@@ -479,14 +479,14 @@ def render_theme():
 
         .example-label {
             margin: 0 0 0.35rem 0;
-            color: #0f172a;
+            color: #0f172a !important;
             font-size: 0.85rem;
             font-weight: 700;
         }
 
         .example-card pre {
             margin: 0;
-            color: #334155;
+            color: #0f172a !important;
             font-size: 0.82rem;
             line-height: 1.4;
             white-space: pre-wrap;

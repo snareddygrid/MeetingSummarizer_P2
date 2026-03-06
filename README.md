@@ -19,10 +19,13 @@ End‑to‑end workflow for meeting‑style dialogue summarization. The repo inc
 - 🎛️ Streamlit app: pick a model, paste a conversation, and generate summaries; view model insights and comparison dashboard.
 
 ## Setup
+Use Conda (Python 3.9.6):
 ```bash
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
+# If Conda is missing: install Miniconda
+echo "(macOS) curl -fsSLo miniconda.sh https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh"
+echo "(Linux) curl -fsSLo miniconda.sh https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh"
+echo "bash miniconda.sh -b -p \"$HOME/miniconda\""
+echo "source \"$HOME/miniconda/bin/activate\""
 ```
 
 ## 🚀 Quick Start (just run the UI)
@@ -43,9 +46,11 @@ On Linux/Windows, install Git LFS from https://git-lfs.com
 git clone <your-repo-url> meeting-summarizer
 cd meeting-summarizer
 
-# 2) Create & activate venv
-python3 -m venv venv
-source venv/bin/activate
+# 2) Create env (Conda, Python 3.9.6)
+# If Conda is missing: install Miniconda (see above)
+conda create -n meeting-summarizer python=3.9.6
+conda activate meeting-summarizer
+python --version   # expect Python 3.9.6
 
 # 3) Install deps
 pip install -r requirements.txt
