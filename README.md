@@ -67,6 +67,11 @@ pip install -r requirements.txt
 ```
 
 ## 🚀 Quick Start (just run the UI)
+Ensure Git LFS is installed (once per machine):
+```bash
+git lfs install
+```
+
 ```bash
 # 1) Clone
 git clone <your-repo-url> meeting-summarizer
@@ -79,7 +84,10 @@ source venv/bin/activate
 # 3) Install deps
 pip install -r requirements.txt
 
-# 4) Launch the UI
+# 4) Pull LFS-tracked model files (if not auto-downloaded)
+git lfs pull
+
+# 5) Launch the UI
 streamlit run app/streamlit_app.py
 ```
 
