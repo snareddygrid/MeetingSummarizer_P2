@@ -1,0 +1,45 @@
+{
+  "backend": {
+    "backend": "llama_cpp_gguf",
+    "gguf_status": "reused",
+    "gguf_reason": "existing_artifact",
+    "fallback_format": null,
+    "note": "llama.cpp GGUF conversion and quantization succeeded."
+  },
+  "default_profile": {
+    "objective": "quality_first_realtime",
+    "quantization": "Q5_K_M",
+    "parallel_processes": 4,
+    "batch_config": {
+      "batch_size": 1,
+      "streaming_step_size": 3,
+      "max_input_length": 1024
+    },
+    "expected_metrics": {
+      "rougeL": 0.2982709044332347,
+      "latency_50_sec": 0.93560902185,
+      "throughput_50_samples_per_sec": 1.068822528049888,
+      "parallel_throughput_samples_per_sec": 7.3373026508369135
+    }
+  },
+  "throughput_profile": {
+    "objective": "throughput_first_realtime",
+    "quantization": "Q8_0",
+    "parallel_processes": 4,
+    "batch_config": {
+      "batch_size": 1,
+      "streaming_step_size": 3,
+      "max_input_length": 1024
+    },
+    "expected_metrics": {
+      "rougeL": 0.2909845795941645,
+      "latency_50_sec": 0.7332045656250031,
+      "throughput_50_samples_per_sec": 1.3638758497740304,
+      "parallel_throughput_samples_per_sec": 10.026194184270949
+    }
+  },
+  "notes": [
+    "Default profile prioritizes ROUGE-L stability while remaining real-time capable.",
+    "Throughput profile maximizes summaries/sec and may trade off summary quality."
+  ]
+}

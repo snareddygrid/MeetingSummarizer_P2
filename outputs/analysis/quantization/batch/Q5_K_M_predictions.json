@@ -1,0 +1,811 @@
+{
+  "model_label": "Q5_K_M",
+  "records": [
+    {
+      "sample_id": "13862856",
+      "reference": "Hannah needs Betty's number but Amanda doesn't have it. She needs to contact Larry.",
+      "prediction": "Amanda has Betty's number. Amanda hasn't found it. Amanda will text Larry.",
+      "latency_sec": 0.5532592499999964,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13729565",
+      "reference": "Eric and Rob are going to watch a stand-up on youtube.",
+      "prediction": "Rob and Rob are going to watch some of Rob's stand-ups on youtube.",
+      "latency_sec": 0.549587167000027,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13680171",
+      "reference": "Lenny can't decide which trousers to buy. Bob advised Lenny on that topic. Lenny goes with Bob's advice to pick the trousers that are of best quality.",
+      "prediction": "Bob will pick the first pair. Lenny has purple trousers. Bob will buy the first or the third pair.",
+      "latency_sec": 0.5511803750000013,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13729438",
+      "reference": "Emma will be home soon and she will let Will know.",
+      "prediction": "Emma will pick Emma up tonight. Emma will be home soon.",
+      "latency_sec": 0.5516442919999918,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13828600",
+      "reference": "Jane is in Warsaw. Ollie and Jane has a party. Jane lost her calendar. They will get a lunch this week on Friday. Ollie accidentally called Jane and talked about whisky. Jane cancels lunch. They'll meet for a tea at 6 pm.",
+      "prediction": "Ollie and Jane are in Warsaw for dinner on the 19th and 18th. They have lunch this week.",
+      "latency_sec": 0.5536169999999743,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13716964",
+      "reference": "Hilary has the keys to the apartment. Benjamin wants to get them and go take a nap. Hilary is having lunch with some French people at La Cantina. Hilary is meeting them at the entrance to the conference hall at 2 pm. Benjamin and Elliot might join them. They're meeting for the drinks in the evening.",
+      "prediction": "Hilary is meeting with Daniel at the entrance to the conference hall at 2 pm and then he will take the keys and take a nap. Benjamin will meet with some French people at the entrance to the conference hall at 2 pm.",
+      "latency_sec": 1.0576422080000043,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13731487",
+      "reference": "Payton provides Max with websites selling clothes. Payton likes browsing and trying on the clothes but not necessarily buying them. Payton usually buys clothes and books as he loves reading.",
+      "prediction": "Payton and Max are going to buy clothes from 2 or 3 sites. They have different things. They are different.",
+      "latency_sec": 0.5582566250000127,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13814882",
+      "reference": "Rita and Tina are bored at work and have still 4 hours left.",
+      "prediction": "Rita is so tired. Tina is falling asleep at work. Tina keeps on looking at the clock and there's still 4 hours of drudgery to go.",
+      "latency_sec": 0.553939000000014,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13680876",
+      "reference": "Beatrice wants to buy Leo a scarf, but he doesn't like scarves. She cares about his health and will buy him a scarf no matter his opinion.",
+      "prediction": "Beatrice is in town, shopping. Leo doesn't need a scarf. Beatrice doesn't like them.",
+      "latency_sec": 0.5504816250000317,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13809974",
+      "reference": "Eric doesn't know if his parents let him go to Ivan's brother's wedding. Ivan will talk to them.",
+      "prediction": "Eric is coming to the wedding. Eric is going to his brother's wedding.",
+      "latency_sec": 0.5624515410000299,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13680771",
+      "reference": "Wanda wants to throw a party. She asks Gina to borrow her father's car and go do groceries together. They set the date for Friday. ",
+      "prediction": "Wanda will make a party. Gina will ask Wanda if she wants to go.",
+      "latency_sec": 0.5577044579999892,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13729249",
+      "reference": "Martin wrote a short review and won 2 cinema tickets on FB. Martin wants Aggie to go with him this week for the new film with Redford.",
+      "prediction": "Aggie won two cinema tickets online.",
+      "latency_sec": 0.5707140829999844,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13680137",
+      "reference": "Charlee is attending Portuguese theater as a subject at university. He and other students are preparing a play by Mrożek translated into Portuguese.",
+      "prediction": "Charlee is in class. He is in portuguese theatre. Charlee is in class.",
+      "latency_sec": 0.5533383329999992,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13864627",
+      "reference": "Ella rented a car, this makes things much faster for her and Tom. ",
+      "prediction": "Tom and Mary are going by car or train. Ella rented a car.",
+      "latency_sec": 0.5606406670000297,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13681139",
+      "reference": "Paul is going to share his Netflix account with Luke. In exchange Luke is going to contribute to the subscription. Paul will send Luke his bank details. Paul is on vacation with his girlfriend till tomorrow.",
+      "prediction": "Luke is looking for someone to join netflix family. Paul will send Luke the login and password on sunday. Luke will wire Paul the money every month.",
+      "latency_sec": 0.5722879170000397,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13680757",
+      "reference": "Greg and Betsy have a lot of work today, so they cannot pick up Johnny from the kindergarten. However, it's Greg's turn to do it. Greg will try to find a solution.",
+      "prediction": "Greg needs to stay after hours. Betsy can't pick Johnny up. He needs to work long hours. Tuesdays are his days in the kindergarten.",
+      "latency_sec": 0.5557462080000164,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13716777",
+      "reference": "Ethan, Toby and Marshall are making fun of Scott.",
+      "prediction": "Ethan and Toby are fuckin the same.",
+      "latency_sec": 0.5658083750000173,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13828901",
+      "reference": "Igor has a lot of work on his notice period and he feels demotivated. John thinks he should do what he has to do nevertheless. ",
+      "prediction": "Igor has so much to do at work and is demotivated. John is going to give a job to someone on their notice period. Igor will do it.",
+      "latency_sec": 0.5739071250000052,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13728509",
+      "reference": "Clara is rewatching Dear White People and strongly recommends it to Neela.",
+      "prediction": "Neela is watching Dear White People on Netflix. She's watching a series 3 coming up next year.",
+      "latency_sec": 0.5795843750000245,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13728442",
+      "reference": "Mike took his car into garage today. Ernest is relieved as someone had just crashed into a red Honda which looks like Mike's. ",
+      "prediction": "Ernest park his car on his street today. He took it into garage.",
+      "latency_sec": 0.5771130420000077,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13728958",
+      "reference": "Beth wants to organize a girls weekend to celebrate her mother's 40th birthday. She also wants to work at Deidre's beauty salon. Deidre offers her a few hours on Saturdays as work experience. They set up for a meeting tomorrow.",
+      "prediction": "Beth and Kira will have a weekend for girls. Deirdre is looking for a weekend for girls. Beth is going to a surprise party for her. Beth is going to a tutor tomorrow.",
+      "latency_sec": 1.0718428750000157,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13862397",
+      "reference": "Gloria has an exam soon. It lasts 4 hours. Emma sent her a link to a website with some texts from previous years so that she can prepare for the exam better.",
+      "prediction": "Gloria's exam is a bit of a lottery. She's going to read everything from the website.",
+      "latency_sec": 0.5584130420000406,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13829966",
+      "reference": "Adam and Karen are worried that May suffers from depression. Karen will call her friend who is a psychologist and ask for advice. ",
+      "prediction": "Adam has talked to May and Karen. Karen is worried about her. Adam suggested a specialist because she doesn't want to see anyone.",
+      "latency_sec": 0.5535062089999769,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13864400",
+      "reference": "Mark lied to Anne about his age. Mark is 40.",
+      "prediction": "Anne was lying to Irene. Mark guy told Jane he's 30, today I saw his passport.",
+      "latency_sec": 0.5548300410000024,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13716103",
+      "reference": "Next week is Wharton's birthday. Augustine, Darlene, Heather and Walker want to buy him a paper shredder. Walker will make sure if Wharton really wants it. ",
+      "prediction": "Darlene and Heather will buy a paper shredder at Wharton's party next week. Walker and Heather will get office equipment.",
+      "latency_sec": 0.5546009579999804,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13716128",
+      "reference": "Kelly is scared of sculpture garden figures in Finnland, she finds figure's faces morbid. For Ollie it's Nagoro village in Japan, it's creepy. ",
+      "prediction": "Ollie and Mickey are going to Nagoro village in Japan. They are a sculpture garden in Finnland.",
+      "latency_sec": 0.5664570409999783,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13682496",
+      "reference": "Selah called a person that did not pick up.",
+      "prediction": "Selah can't see the phone number.",
+      "latency_sec": 0.5627395420000312,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13730015",
+      "reference": "Bella and Eric dismissed a request of a client. Their boss appreciated the decision. He brings in new clients.",
+      "prediction": "Eric and Bella were angry today in boss's room. They were potential clients. Bella and Eric were astounded by their reaction.",
+      "latency_sec": 0.5609292920000257,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13731152",
+      "reference": "Emma is about to take a nap in the back of the bus to New York. Ben and Emma will be there around 4.30 pm. Ben will wake Emma up 15 minutes prior to their arrival.",
+      "prediction": "Emma will come to NY around 4.30 PM.",
+      "latency_sec": 0.5642160829999057,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13716107",
+      "reference": "Jesse, Melvin, Lee and Maxine are going to take part in the Christmas charity action of the foundation called Refuge, which helps women and children who escape from abuse.",
+      "prediction": "Jesse is thinking about doing something 4 the less fortunate this year. Maxine is in for the 3rd list.",
+      "latency_sec": 0.5717909169999302,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13728966",
+      "reference": "Mary ran out of money. Carter is going to lend her some in an hour.",
+      "prediction": "Mary broke. Carter will give her a few boxes at the train station.",
+      "latency_sec": 0.5531192920000194,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13828761",
+      "reference": "Paula helped Charlotte with correct pronunciation of \"Natal lily\".",
+      "prediction": "Paula pronounces 'Natal lily', the name of the plant. It refers to the region of ZA and not to the word 'natal' as in 'his natal day'.",
+      "latency_sec": 0.5596930409999459,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13728735",
+      "reference": "Jack and May will drink cocktails later.",
+      "prediction": "May and May are going to drink cocktails later.",
+      "latency_sec": 0.5717444169999908,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13828647",
+      "reference": "Margaret is suffering from a terrible headache and wants Jack to buy her some painkillers. ",
+      "prediction": "Margaret and Jack are going to buy a painkiller.",
+      "latency_sec": 0.5511742080000204,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13680875",
+      "reference": "Serge is on his way to pick up the film equipment for the shooting tonight. Andrei and Serge are late with a large payment to the company. Serge and Andrei will try to use the credit card to pay the company.",
+      "prediction": "Serge picked up the film equipment for tonite's shooting. Serge will pay an outstanding bill with the company.",
+      "latency_sec": 0.5656313339999315,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13829728",
+      "reference": "Martina advises against getting a hamster. ",
+      "prediction": "Janice has been asking her son to get a hamster for his birthday. Martina got one for her son and it stank up the whole house.",
+      "latency_sec": 0.5712572089998957,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13864532",
+      "reference": "Mary has played DA Inquisition. Lucas has played DA II. Daniel started playing DA Inquisition.",
+      "prediction": "Daniel and Dorian are playing DA II.",
+      "latency_sec": 0.5710610410000072,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13818537",
+      "reference": "Judy thinks she's always attracted to bad guys.",
+      "prediction": "Judy is attracted to jerks. He was a jerk. He stopped calling and texting.",
+      "latency_sec": 0.570902292000028,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13810120",
+      "reference": "Riley and James watch Chloe on tv undergoing a metamorphosis.",
+      "prediction": "Chloe is on tv. James has found it on which channel.",
+      "latency_sec": 0.5559977080000635,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13731040",
+      "reference": "Tina will catch the evening flight back home. Ala is on her way to the meeting. She will let Tina know how it went.",
+      "prediction": "Tina is on her way to a meeting. Ala is talking to a pilot.",
+      "latency_sec": 0.5622115829999075,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13728229",
+      "reference": "Sebastian is very happy with his life, and shares this happiness with Kevin.",
+      "prediction": "Sebastian and Kevin are moving to the United States. Sebastian is happy for Kevin.",
+      "latency_sec": 0.5700827499999832,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13680571",
+      "reference": "Son is coming to see his parents' this weekend.",
+      "prediction": "Son will come home this weekend. Son will tell his mother that he will come.",
+      "latency_sec": 0.5630129579999448,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13829773",
+      "reference": "Ola is in Cuba and is enjoying her trip. She has problems with connectivity there. Momo has recovered from her injury. Ola doesn't like the clothes in Cuba. Ola will try to find a blouse for mum in Cuba, as Kate suggested.",
+      "prediction": "Ola and Momo are enjoying their trip. Kate is not in touch properly. Momo has recovered from her injury and frolicking again.",
+      "latency_sec": 0.5662289580000106,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13829332",
+      "reference": "Mike will ask Mary for John's new number.",
+      "prediction": "Ann and Mike are asking Mary to ask John's number.",
+      "latency_sec": 0.5539773749999313,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13862428",
+      "reference": "Joseph has sent Ella a photo of Wujek Janek's twin baby cows. Ella is delighted.",
+      "prediction": "Ella has tween cows.",
+      "latency_sec": 0.5692985409999665,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13716025",
+      "reference": "Josh thinks Stephen accidentally took his notebook. Jack has it and will bring it tomorrow.",
+      "prediction": "Stephen has taken his notebook home. Jack will bring it tomorow.",
+      "latency_sec": 0.5675969999999779,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13810245",
+      "reference": "Adele got a new biscuit Labrador Chewy that is 4 months. Her cats keep their distance, and Poppy and Lulu seem to mother Chewy and Speedy wants to play.",
+      "prediction": "Adele got a new dog. Adele has a pup biscuit lab. Adele has a new dog. Adele has a new dog. Adele has a puppy biscuit lab.",
+      "latency_sec": 0.555734750000056,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13863202",
+      "reference": "Kristian and Tabora are playing a game about what they like best.",
+      "prediction": "Kristian and Tabora are playing games.",
+      "latency_sec": 0.5500204999999596,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13829473",
+      "reference": "Cathy will pick up her glasses tonight at 10.",
+      "prediction": "Broke left her sunglasses at her. Cathy will come round at 10 tonight.",
+      "latency_sec": 0.5542334170000913,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13819035",
+      "reference": "Petra is very sleepy at work today, Andy finds the day boring, and Ezgi is working. ",
+      "prediction": "Petra needs to sleep, she can't stand how sleepy she is. Ezgi is working at the office.",
+      "latency_sec": 0.5508609999999408,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13728057-1",
+      "reference": "Nick finds Jane pretty and invites her for a drink to get to know her better. Jane rejects Nick and is unpleasant to him. Nick suggests Jane to forget about their conversation.",
+      "prediction": "Nick and Jane meet up for a drink. Nick is shooting a bit above the belt.",
+      "latency_sec": 0.5558540840000887,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13865165",
+      "reference": "Julia knew Tim was gay, while Adam and Nate didn't. ",
+      "prediction": "Adam told Julia that Tim saw him with a guy. He didn't tell her.",
+      "latency_sec": 0.5670557920000192,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13817042",
+      "reference": "Lilly will be late. Gabriel will order pasta with salmon and basil for her.",
+      "prediction": "Lilly is late. Gabriel will order the food for her.",
+      "latency_sec": 0.5511119579999786,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13730929",
+      "reference": "Celine is not at home, but she will call Cara before visiting her.",
+      "prediction": "Cara is not at home. She wants to pass by.",
+      "latency_sec": 0.5582026669999323,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13863033",
+      "reference": "Derek will be at Craig's in 20 minutes to help him with his malfunctioning computer.",
+      "prediction": "Craig needs help with his computer. Derek is not working.",
+      "latency_sec": 0.5715561670000397,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13829923",
+      "reference": "Abigail is not going to take a stroll with the little ones. Her smog alert app is showing that the norms have been exceeded by 30% today.",
+      "prediction": "Emma wants to take a stroll with the little ones. Abigail's smog alert app is showing that the norms have been exceeded by 30% today.",
+      "latency_sec": 0.5591324590000113,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13729905",
+      "reference": "Paul will buy red roses following Cindy's advice.",
+      "prediction": "Cindy and Paul are going to get pink flowers.",
+      "latency_sec": 0.5735266249999995,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13829307",
+      "reference": "Jenny has left her credit car at the Mary's shop.",
+      "prediction": "Mary has left her credit card at her shop. She will pick it up.",
+      "latency_sec": 0.5668334160000086,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13611548",
+      "reference": "It's Tom's birthday. Lara and Gary will come to Tom's place about 5 pm to prepare everything before Tom gets back home at 5:30. Gary has already paid for the cake - Lara will pick it up and she will also get the balloons. ",
+      "prediction": "Lara will show up at 5 pm. Tom is supposed to be back home at 5:30. Lara will pick up the cake and get the balloons.",
+      "latency_sec": 0.5658754999999474,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13680802",
+      "reference": "Paul is late for a meeting with Laura and she refuses to wait any longer.",
+      "prediction": "Laura is near the Mac. Laura is not waiting anymore. Laura is not there.",
+      "latency_sec": 0.5654031249999889,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13818220",
+      "reference": "Salma and Hugh like cat memes.",
+      "prediction": "Salma is the latest cat meme. Hugh is not able to get enough of the meme.",
+      "latency_sec": 0.5507670419999613,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13819911",
+      "reference": "Todays results show that Matt and Oliver got into Stanford University, Peter did not. ",
+      "prediction": "Matt and Oliver are going to Stanford tomorrow.",
+      "latency_sec": 0.5640423339999643,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13864554",
+      "reference": "English classes were cancelled because Smith called in sick and replacement could not be found.",
+      "prediction": "Jake and Vanessa aren't having english today.",
+      "latency_sec": 0.5543822079999927,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13715960",
+      "reference": "Brandon has lost his credit card and blocked it in the bank. It will take some time before he gets a new one, and he needs money. Luke is broke, but Ian will lend Brandon some money.",
+      "prediction": "Brandon has lost his credit card. Luke blocked it in the bank. Brandon can lend him $ 100 guys.",
+      "latency_sec": 0.5642085409999709,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13716051",
+      "reference": "Patrycja and Inez enjoyed the Italian evening. Gosia chose a great place. Alicja hasn't been to the new restaurant. They all want a Korean evening on Wednesday in two weeks time.",
+      "prediction": "Inez and Patrycja are going to a restaurant in Italy and Korea. They will go again on Wednesday.",
+      "latency_sec": 0.5579158330000382,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13680457",
+      "reference": "Ana wants to visit grandma tomorrow. Catherine will go with her. She will call Anna when she wakes up.",
+      "prediction": "Ana and Catherine are sleeping. Catherine will visit her grandma tomorrow.",
+      "latency_sec": 0.5680335829999876,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13821684",
+      "reference": "Edson is booking his ticket now.",
+      "prediction": "Joyce is booking her ticket now.",
+      "latency_sec": 0.5532935410000164,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13817976",
+      "reference": "Jane wants to leave at 4.30 instead of 5 because Google Maps suggests the 300 km drive should take them at least 3 hours and she doesn't want to be late. She will wait for Steven at the main entrance.",
+      "prediction": "Steven used to make it in 2 and it's almost 300km. The road is new. Steven will meet at 4:30 instead of 5 instead.",
+      "latency_sec": 0.5726041660000192,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13612149-1",
+      "reference": "Suzanne is at work and is having a break now. Morgan invites Suzanne to a concert of Maroon 5 which takes place next week at the Hulu Theatre at Madison Square Garden. Suzzanne agrees.",
+      "prediction": "Suzanne is working at her job. She is taking a break. She is going to a concert next week at the Hulu Theater at Madison Square Garden.",
+      "latency_sec": 0.5574964580000596,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13818620",
+      "reference": "The last one Julia read was Die again from 2014. There's going to be a meeting with Tess organized by the city library. ",
+      "prediction": "Liam has read Die again from 2014 and has heard that city library is organizing a meeting with Tess.",
+      "latency_sec": 0.5558975830000463,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13810034",
+      "reference": "Ali left his wallet at Mohammad's place. Mohammad'll bring it to uni tomorrow.",
+      "prediction": "Ali left his wallet at his place yesterday. He will check his room.",
+      "latency_sec": 0.5487753339999699,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13680607",
+      "reference": "Linda and Laura are going to an Italian restaurant tomorrow.",
+      "prediction": "Laura will go to the italian restaurant tommorow.",
+      "latency_sec": 0.5555013749999489,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13821155",
+      "reference": "Anna organises a birthday's party on the 6th of November at 19:30.",
+      "prediction": "Natalie and Anna are going to meet on the 6th of November at 1930.",
+      "latency_sec": 0.5553890420000016,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13681586",
+      "reference": "Mia is going out after work tonight with her female friends. If she wants, Elliot will come and pick her up.",
+      "prediction": "Mia and Elliot are going out after work tonight. Mia and Elliot will grab some drinks.",
+      "latency_sec": 0.5718097500000567,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13681541",
+      "reference": "Jayden explains Brennan why she doesn't want to be pregnant.",
+      "prediction": "Jayden is pregnant. He needs to look for another mother to his kids. He is obligated to be with the 24h. He is not going to have sex and wait for a baby.",
+      "latency_sec": 0.5538569999999936,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13680611",
+      "reference": "USA won last night. England is playing against Croatia tomorrow at 2.",
+      "prediction": "Steve forgot to check USA last night.",
+      "latency_sec": 0.5665771669999913,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13729722",
+      "reference": "John forgot his wallet. He wants Ela to give it to him outside in 10 minutes.",
+      "prediction": "Ela is coming in 10 mins. She forgot her walle outside. John sent her a message.",
+      "latency_sec": 0.5806054170000152,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13730529",
+      "reference": "Mark told his sister that Mary is doing an online job. Mark's sister is contacting people to confirm it. Mark thinks she's jealous. Mary hates Mark's sister.",
+      "prediction": "Mary is doing online job. She is angry and she doesn't want to prove anything to anyone.",
+      "latency_sec": 0.5635992499999247,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13813575",
+      "reference": "Fiona wants to prepare dinner for Chris. She is thinking of Tina's tart. She will help her make it.",
+      "prediction": "Fiona is trying to prepare a nice dinner for Chris. Tina bought the crust.",
+      "latency_sec": 0.5653917910000246,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13865384",
+      "reference": "Annette is sick. James is going to the Jesus bar. Oli couldn't find anyone near the bar.",
+      "prediction": "Peadar is coming for a drink later. Anne is home sick so she's going to Jesus bar. Helen will join Peadar.",
+      "latency_sec": 0.5551550410000345,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13728017",
+      "reference": "Ryan and Sebastian are worried about the political situation in Ukraine.",
+      "prediction": "Sebastian and Ryan are going to Ukraine to meet in a russian circus.",
+      "latency_sec": 0.5628317910000078,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13729058",
+      "reference": "Finn and Zadie are going to Elephant and Castle tomorrow at 2. They will meet at the main entrance.",
+      "prediction": "Finn is going to Elephant and Castle tomorrow. Zadie is going to see a neighborhood called Elephant and Castle.",
+      "latency_sec": 0.5713963749999493,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13611803",
+      "reference": "Jacob hasn't listened to the song Harry sent him 3 days ago. Jacob will do it later tonight and let Harry know what he thinks.",
+      "prediction": "Harry will listen to the song he sent him 3 days ago.",
+      "latency_sec": 0.5609437919999891,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13729817",
+      "reference": "Ray is locked in the room from the outside and he has to pee. Max's roommate will come and let him out.",
+      "prediction": "Ray is in his room. He has to ask him to do it.",
+      "latency_sec": 0.5696988749999718,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13728051",
+      "reference": "Kim is about to tell mom that Harry bought a new sofa, and he needs grey pillows.",
+      "prediction": "Kim is asking her mom to buy a new sofa and need pillows.",
+      "latency_sec": 0.5566384170000447,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13810694",
+      "reference": "Josh wants to buy a tablet and doesn't know which brand he should choose. According to Brian, other brands are better than Apple and he can get a Samsung tablet cheaper. Josh will call Brian after work to talk about it.",
+      "prediction": "Josh needs to buy an iPad. Brian recommends brands like Samsung, Xiaomi, Sony, Sony and Samsung.",
+      "latency_sec": 0.5569293339999604,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13820547",
+      "reference": "Nathalie, Olafur and Zoe are planning the New Year's Eve. Nathalie wants something classy. Olafur doesn't like opera. They want to go to the Breakfast at Tiffany's party in Soho.",
+      "prediction": "Nathalie is thinking about partying somewhere. She is thinking about something classy like opera or sth like that.",
+      "latency_sec": 0.5563679170001024,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13731456",
+      "reference": "Frank tries to encourage Andy to learn for the tomorrow's quiz.",
+      "prediction": "Frank will study for Arrow B tomorrow.",
+      "latency_sec": 0.5631890419999763,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13728313",
+      "reference": "Kim needs to get some fresh fish in Warsaw. Kim will ask at restaurants about their source. Kim is planning something special but won't share any details with Margot for now.",
+      "prediction": "Kim is going to try a fish market at Polna street. Margot hasn't found it.",
+      "latency_sec": 0.5675496250000833,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13730868",
+      "reference": "Tom will meet Ben in the Oval Room at 2pm and tells him to bring the papers. ",
+      "prediction": "Ben will be there at 2pm in the Oval Room.",
+      "latency_sec": 0.5552920840000297,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13862919",
+      "reference": "Ashleigh got the job.",
+      "prediction": "Ashleigh got the job. Peter is going to the cinema.",
+      "latency_sec": 0.5523600840000427,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13682034",
+      "reference": "Danna has a boring weekend and is watching TV. Reed is in bed. He has a free day tomorrow.",
+      "prediction": "Reed called 5-8 of her friends and they aren't around or are busy. Danna is in bed tomorrow.",
+      "latency_sec": 0.5698113750000857,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13814407",
+      "reference": "Alivia has been taciturn lately. She was trying to write her thesis. She can't focus on writing. She'll try to follow Antonio's advice to start writing without overthinking.",
+      "prediction": "Antonio is working on his thesis. He's not going to work. He's not going to write.",
+      "latency_sec": 0.5579144579999138,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13728444-1",
+      "reference": "Maddie will buy a white bread and apples on John's request.",
+      "prediction": "Maddie is in Asda. John and John are in Asda.",
+      "latency_sec": 0.5527347909999207,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13829161",
+      "reference": "Elliot can't talk to Jordan now, he's busy. He'll call him back at 8 pm. Jordan is going to Brad's funeral. He had liver cancer.",
+      "prediction": "Elliot is busy and will call u at 8 pm.",
+      "latency_sec": 0.5713803339999686,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13680110",
+      "reference": "Flo cannot get an appointment at the salon until the 6th. Flo worries she's going to be gray. Flo will have to get a touch-up kit at Tesco.",
+      "prediction": "Gina can't get into the salon until the 6th.",
+      "latency_sec": 0.5615547090000064,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13862785",
+      "reference": "Rob is doing shopping at the grocery store. Ann ordered him to buy a cucumber, some tomatoes, bananas and apples.",
+      "prediction": "Rob is at the grocery store and was wondering if she needs babe. Rob has everything for supper and lunch tomorrow.",
+      "latency_sec": 0.5572948750000251,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13681246",
+      "reference": "It's been very long since Melany last had sex. Marvin made an inappropriate joke about it.",
+      "prediction": "Melany doesn't remember the last time Marvin got laid.",
+      "latency_sec": 0.5572095420000096,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13715777",
+      "reference": "Eric, Samantha and Noah's professor is commenting a recent scandal on the news. ",
+      "prediction": "Eric and Samantha are talking about the recent scandal on the news.",
+      "latency_sec": 0.5571262920000208,
+      "target_utterances": null
+    },
+    {
+      "sample_id": "13729335",
+      "reference": "According to Jacky, David did the right thing taking the blame. They will talk when Jack comes back home.",
+      "prediction": "Jacky and David are right about taking the blame.",
+      "latency_sec": 0.5681480829999828,
+      "target_utterances": null
+    }
+  ],
+  "num_samples": 100,
+  "dataset_size": 100,
+  "subset_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99
+  ],
+  "subset_split": "test",
+  "subset_selection_mode": "first_n"
+}

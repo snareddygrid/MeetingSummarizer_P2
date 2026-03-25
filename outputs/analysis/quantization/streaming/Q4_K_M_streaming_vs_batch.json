@@ -1,0 +1,1718 @@
+{
+  "model_label": "Q4_K_M",
+  "num_samples": 100,
+  "streaming": {
+    "latency": {
+      "count": 471,
+      "mean_sec": 0.5627049210106141,
+      "median_sec": 0.5539130419999765,
+      "p95_sec": 0.5701298750000205,
+      "min_sec": 0.5452820839999504,
+      "max_sec": 1.072155749999979,
+      "total_sec": 265.03401779599926
+    },
+    "peak_memory_mb_mean": 175.47478768577494,
+    "peak_memory_mb_max": 278.4375,
+    "rouge1": 0.3594702310062155,
+    "rouge2": 0.14287042595371086,
+    "rougeL": 0.29806333908574717
+  },
+  "batch": {
+    "latency": {
+      "count": 100,
+      "mean_sec": 0.5658435920899956,
+      "median_sec": 0.5539180840000881,
+      "p95_sec": 0.5725097079999841,
+      "min_sec": 0.5463118330000043,
+      "max_sec": 1.054781958000035,
+      "total_sec": 56.58435920899956
+    },
+    "peak_memory_mb_mean": 182.6440625,
+    "peak_memory_mb_max": 276.359375,
+    "rouge1": 0.3594702310062155,
+    "rouge2": 0.14287042595371086,
+    "rougeL": 0.29806333908574717
+  },
+  "quality_delta_rougeL": 0.0,
+  "total_latency_delta_sec": 208.4496585869997,
+  "total_streaming_latency_sec": 265.03401779599926,
+  "total_batch_latency_sec": 56.58435920899956,
+  "per_sample": [
+    {
+      "sample_id": "13862856",
+      "turn_count": 15,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        15
+      ],
+      "stream_total_latency_sec": 3.30464979199985,
+      "stream_mean_update_latency_sec": 0.5507749653333084,
+      "batch_latency_sec": 0.5525319590000208,
+      "stream_peak_memory_mb": 180.046875,
+      "batch_peak_memory_mb": 176.890625
+    },
+    {
+      "sample_id": "13729565",
+      "turn_count": 16,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16
+      ],
+      "stream_total_latency_sec": 3.3192259999997304,
+      "stream_mean_update_latency_sec": 0.5532043333332884,
+      "batch_latency_sec": 0.5521502079999436,
+      "stream_peak_memory_mb": 185.3125,
+      "batch_peak_memory_mb": 180.578125
+    },
+    {
+      "sample_id": "13680171",
+      "turn_count": 16,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16
+      ],
+      "stream_total_latency_sec": 3.321602998000003,
+      "stream_mean_update_latency_sec": 0.5536004996666671,
+      "batch_latency_sec": 0.5503403339999977,
+      "stream_peak_memory_mb": 188.640625,
+      "batch_peak_memory_mb": 190.734375
+    },
+    {
+      "sample_id": "13729438",
+      "turn_count": 10,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10
+      ],
+      "stream_total_latency_sec": 2.2123700010000675,
+      "stream_mean_update_latency_sec": 0.5530925002500169,
+      "batch_latency_sec": 0.5525329170000077,
+      "stream_peak_memory_mb": 179.875,
+      "batch_peak_memory_mb": 177.828125
+    },
+    {
+      "sample_id": "13828600",
+      "turn_count": 24,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22,
+        24
+      ],
+      "stream_total_latency_sec": 4.99343404199999,
+      "stream_mean_update_latency_sec": 0.5548260046666655,
+      "batch_latency_sec": 0.5543472909999991,
+      "stream_peak_memory_mb": 217.75,
+      "batch_peak_memory_mb": 217.984375
+    },
+    {
+      "sample_id": "13716964",
+      "turn_count": 18,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16,
+        18
+      ],
+      "stream_total_latency_sec": 4.37915049999981,
+      "stream_mean_update_latency_sec": 0.6255929285714014,
+      "batch_latency_sec": 0.5508560829999851,
+      "stream_peak_memory_mb": 236.046875,
+      "batch_peak_memory_mb": 235.25
+    },
+    {
+      "sample_id": "13731487",
+      "turn_count": 28,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22,
+        25,
+        28
+      ],
+      "stream_total_latency_sec": 5.547138833000076,
+      "stream_mean_update_latency_sec": 0.5547138833000076,
+      "batch_latency_sec": 0.5528989579999006,
+      "stream_peak_memory_mb": 216.796875,
+      "batch_peak_memory_mb": 216.125
+    },
+    {
+      "sample_id": "13814882",
+      "turn_count": 8,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        8
+      ],
+      "stream_total_latency_sec": 2.2244832499999347,
+      "stream_mean_update_latency_sec": 0.5561208124999837,
+      "batch_latency_sec": 0.5525025829999777,
+      "stream_peak_memory_mb": 177.25,
+      "batch_peak_memory_mb": 178.84375
+    },
+    {
+      "sample_id": "13680876",
+      "turn_count": 10,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10
+      ],
+      "stream_total_latency_sec": 2.229630499999871,
+      "stream_mean_update_latency_sec": 0.5574076249999678,
+      "batch_latency_sec": 0.5517057499999964,
+      "stream_peak_memory_mb": 178.6875,
+      "batch_peak_memory_mb": 181.03125
+    },
+    {
+      "sample_id": "13809974",
+      "turn_count": 14,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        14
+      ],
+      "stream_total_latency_sec": 3.3177062910001496,
+      "stream_mean_update_latency_sec": 0.552951048500025,
+      "batch_latency_sec": 0.5496146250000038,
+      "stream_peak_memory_mb": 181.78125,
+      "batch_peak_memory_mb": 178.71875
+    },
+    {
+      "sample_id": "13680771",
+      "turn_count": 14,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        14
+      ],
+      "stream_total_latency_sec": 3.3038456240001324,
+      "stream_mean_update_latency_sec": 0.5506409373333554,
+      "batch_latency_sec": 0.5520470409999234,
+      "stream_peak_memory_mb": 181.53125,
+      "batch_peak_memory_mb": 183.59375
+    },
+    {
+      "sample_id": "13729249",
+      "turn_count": 10,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10
+      ],
+      "stream_total_latency_sec": 2.235956707000014,
+      "stream_mean_update_latency_sec": 0.5589891767500035,
+      "batch_latency_sec": 0.5521795000000793,
+      "stream_peak_memory_mb": 176.65625,
+      "batch_peak_memory_mb": 176.09375
+    },
+    {
+      "sample_id": "13680137",
+      "turn_count": 7,
+      "stream_steps": [
+        1,
+        4,
+        7
+      ],
+      "stream_total_latency_sec": 1.6571762080000099,
+      "stream_mean_update_latency_sec": 0.5523920693333366,
+      "batch_latency_sec": 0.5569579159999876,
+      "stream_peak_memory_mb": 173.984375,
+      "batch_peak_memory_mb": 171.46875
+    },
+    {
+      "sample_id": "13864627",
+      "turn_count": 4,
+      "stream_steps": [
+        1,
+        4
+      ],
+      "stream_total_latency_sec": 1.1039197500000455,
+      "stream_mean_update_latency_sec": 0.5519598750000227,
+      "batch_latency_sec": 0.5538829580000311,
+      "stream_peak_memory_mb": 160.78125,
+      "batch_peak_memory_mb": 162.65625
+    },
+    {
+      "sample_id": "13681139",
+      "turn_count": 12,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        12
+      ],
+      "stream_total_latency_sec": 2.7808047500000157,
+      "stream_mean_update_latency_sec": 0.5561609500000031,
+      "batch_latency_sec": 0.5548882089999552,
+      "stream_peak_memory_mb": 186.53125,
+      "batch_peak_memory_mb": 185.9375
+    },
+    {
+      "sample_id": "13680757",
+      "turn_count": 13,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13
+      ],
+      "stream_total_latency_sec": 2.7570981659999916,
+      "stream_mean_update_latency_sec": 0.5514196331999983,
+      "batch_latency_sec": 0.564826041999936,
+      "stream_peak_memory_mb": 183.46875,
+      "batch_peak_memory_mb": 183.59375
+    },
+    {
+      "sample_id": "13716777",
+      "turn_count": 9,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        9
+      ],
+      "stream_total_latency_sec": 2.2425048340001013,
+      "stream_mean_update_latency_sec": 0.5606262085000253,
+      "batch_latency_sec": 0.5571554169999899,
+      "stream_peak_memory_mb": 170.484375,
+      "batch_peak_memory_mb": 170.953125
+    },
+    {
+      "sample_id": "13828901",
+      "turn_count": 13,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13
+      ],
+      "stream_total_latency_sec": 2.7691497079998726,
+      "stream_mean_update_latency_sec": 0.5538299415999746,
+      "batch_latency_sec": 0.5545176249999031,
+      "stream_peak_memory_mb": 190.359375,
+      "batch_peak_memory_mb": 185.75
+    },
+    {
+      "sample_id": "13728509",
+      "turn_count": 21,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        21
+      ],
+      "stream_total_latency_sec": 4.941428374999987,
+      "stream_mean_update_latency_sec": 0.6176785468749983,
+      "batch_latency_sec": 0.5527675839999802,
+      "stream_peak_memory_mb": 261.453125,
+      "batch_peak_memory_mb": 256.5625
+    },
+    {
+      "sample_id": "13728442",
+      "turn_count": 6,
+      "stream_steps": [
+        1,
+        4,
+        6
+      ],
+      "stream_total_latency_sec": 1.6554579999999532,
+      "stream_mean_update_latency_sec": 0.5518193333333178,
+      "batch_latency_sec": 0.5499777920000497,
+      "stream_peak_memory_mb": 168.140625,
+      "batch_peak_memory_mb": 165.921875
+    },
+    {
+      "sample_id": "13728958",
+      "turn_count": 21,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        21
+      ],
+      "stream_total_latency_sec": 5.945297623999977,
+      "stream_mean_update_latency_sec": 0.7431622029999971,
+      "batch_latency_sec": 1.054781958000035,
+      "stream_peak_memory_mb": 278.4375,
+      "batch_peak_memory_mb": 276.359375
+    },
+    {
+      "sample_id": "13862397",
+      "turn_count": 18,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16,
+        18
+      ],
+      "stream_total_latency_sec": 3.8770268739999665,
+      "stream_mean_update_latency_sec": 0.5538609819999952,
+      "batch_latency_sec": 0.5515307919999941,
+      "stream_peak_memory_mb": 196.15625,
+      "batch_peak_memory_mb": 191.828125
+    },
+    {
+      "sample_id": "13829966",
+      "turn_count": 16,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16
+      ],
+      "stream_total_latency_sec": 3.3481715830000667,
+      "stream_mean_update_latency_sec": 0.5580285971666777,
+      "batch_latency_sec": 0.5491236249999929,
+      "stream_peak_memory_mb": 219.765625,
+      "batch_peak_memory_mb": 220.09375
+    },
+    {
+      "sample_id": "13864400",
+      "turn_count": 6,
+      "stream_steps": [
+        1,
+        4,
+        6
+      ],
+      "stream_total_latency_sec": 1.669646332999946,
+      "stream_mean_update_latency_sec": 0.5565487776666487,
+      "batch_latency_sec": 0.5531191250000802,
+      "stream_peak_memory_mb": 168.09375,
+      "batch_peak_memory_mb": 167.53125
+    },
+    {
+      "sample_id": "13716103",
+      "turn_count": 16,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16
+      ],
+      "stream_total_latency_sec": 3.3006618729998536,
+      "stream_mean_update_latency_sec": 0.5501103121666423,
+      "batch_latency_sec": 0.5725097079999841,
+      "stream_peak_memory_mb": 189.421875,
+      "batch_peak_memory_mb": 190.46875
+    },
+    {
+      "sample_id": "13716128",
+      "turn_count": 28,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22,
+        25,
+        28
+      ],
+      "stream_total_latency_sec": 5.541336499000067,
+      "stream_mean_update_latency_sec": 0.5541336499000067,
+      "batch_latency_sec": 0.5540083749999667,
+      "stream_peak_memory_mb": 231.140625,
+      "batch_peak_memory_mb": 230.1875
+    },
+    {
+      "sample_id": "13682496",
+      "turn_count": 4,
+      "stream_steps": [
+        1,
+        4
+      ],
+      "stream_total_latency_sec": 1.1044705419999445,
+      "stream_mean_update_latency_sec": 0.5522352709999723,
+      "batch_latency_sec": 0.5748260829999481,
+      "stream_peak_memory_mb": 166.1875,
+      "batch_peak_memory_mb": 162.796875
+    },
+    {
+      "sample_id": "13730015",
+      "turn_count": 8,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        8
+      ],
+      "stream_total_latency_sec": 2.213911705999976,
+      "stream_mean_update_latency_sec": 0.553477926499994,
+      "batch_latency_sec": 0.5531227079999326,
+      "stream_peak_memory_mb": 182.1875,
+      "batch_peak_memory_mb": 186.390625
+    },
+    {
+      "sample_id": "13731152",
+      "turn_count": 15,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        15
+      ],
+      "stream_total_latency_sec": 3.3171108740000363,
+      "stream_mean_update_latency_sec": 0.5528518123333394,
+      "batch_latency_sec": 0.5539731249999704,
+      "stream_peak_memory_mb": 175.09375,
+      "batch_peak_memory_mb": 172.40625
+    },
+    {
+      "sample_id": "13716107",
+      "turn_count": 28,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22,
+        25,
+        28
+      ],
+      "stream_total_latency_sec": 5.566959956999995,
+      "stream_mean_update_latency_sec": 0.5566959956999995,
+      "batch_latency_sec": 0.5496294170000056,
+      "stream_peak_memory_mb": 239.34375,
+      "batch_peak_memory_mb": 237.21875
+    },
+    {
+      "sample_id": "13728966",
+      "turn_count": 3,
+      "stream_steps": [
+        1,
+        3
+      ],
+      "stream_total_latency_sec": 1.1057992920000288,
+      "stream_mean_update_latency_sec": 0.5528996460000144,
+      "batch_latency_sec": 0.5519240420001097,
+      "stream_peak_memory_mb": 165.109375,
+      "batch_peak_memory_mb": 163.328125
+    },
+    {
+      "sample_id": "13828761",
+      "turn_count": 10,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10
+      ],
+      "stream_total_latency_sec": 2.2064711660000285,
+      "stream_mean_update_latency_sec": 0.5516177915000071,
+      "batch_latency_sec": 0.5485781249999491,
+      "stream_peak_memory_mb": 183.421875,
+      "batch_peak_memory_mb": 179.109375
+    },
+    {
+      "sample_id": "13728735",
+      "turn_count": 8,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        8
+      ],
+      "stream_total_latency_sec": 2.241257001000008,
+      "stream_mean_update_latency_sec": 0.560314250250002,
+      "batch_latency_sec": 0.5525548750000553,
+      "stream_peak_memory_mb": 166.5,
+      "batch_peak_memory_mb": 167.609375
+    },
+    {
+      "sample_id": "13828647",
+      "turn_count": 4,
+      "stream_steps": [
+        1,
+        4
+      ],
+      "stream_total_latency_sec": 1.1078148760000204,
+      "stream_mean_update_latency_sec": 0.5539074380000102,
+      "batch_latency_sec": 0.5549626660000513,
+      "stream_peak_memory_mb": 161.34375,
+      "batch_peak_memory_mb": 163.53125
+    },
+    {
+      "sample_id": "13680875",
+      "turn_count": 7,
+      "stream_steps": [
+        1,
+        4,
+        7
+      ],
+      "stream_total_latency_sec": 1.6638256249999586,
+      "stream_mean_update_latency_sec": 0.5546085416666529,
+      "batch_latency_sec": 0.5513981670000021,
+      "stream_peak_memory_mb": 177.1875,
+      "batch_peak_memory_mb": 175.40625
+    },
+    {
+      "sample_id": "13829728",
+      "turn_count": 5,
+      "stream_steps": [
+        1,
+        4,
+        5
+      ],
+      "stream_total_latency_sec": 1.6744026660001055,
+      "stream_mean_update_latency_sec": 0.5581342220000352,
+      "batch_latency_sec": 0.567675582999982,
+      "stream_peak_memory_mb": 166.015625,
+      "batch_peak_memory_mb": 166.109375
+    },
+    {
+      "sample_id": "13864532",
+      "turn_count": 12,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        12
+      ],
+      "stream_total_latency_sec": 2.7824095000000852,
+      "stream_mean_update_latency_sec": 0.5564819000000171,
+      "batch_latency_sec": 0.5501786669999547,
+      "stream_peak_memory_mb": 179.765625,
+      "batch_peak_memory_mb": 177.984375
+    },
+    {
+      "sample_id": "13818537",
+      "turn_count": 7,
+      "stream_steps": [
+        1,
+        4,
+        7
+      ],
+      "stream_total_latency_sec": 1.6823241249999228,
+      "stream_mean_update_latency_sec": 0.5607747083333076,
+      "batch_latency_sec": 0.5537415409999085,
+      "stream_peak_memory_mb": 172.34375,
+      "batch_peak_memory_mb": 171.578125
+    },
+    {
+      "sample_id": "13810120",
+      "turn_count": 6,
+      "stream_steps": [
+        1,
+        4,
+        6
+      ],
+      "stream_total_latency_sec": 1.6820545840000705,
+      "stream_mean_update_latency_sec": 0.5606848613333568,
+      "batch_latency_sec": 0.5490442909999729,
+      "stream_peak_memory_mb": 170.53125,
+      "batch_peak_memory_mb": 165.640625
+    },
+    {
+      "sample_id": "13731040",
+      "turn_count": 15,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        15
+      ],
+      "stream_total_latency_sec": 3.320383250999839,
+      "stream_mean_update_latency_sec": 0.5533972084999732,
+      "batch_latency_sec": 0.5517615000001115,
+      "stream_peak_memory_mb": 190.015625,
+      "batch_peak_memory_mb": 191.625
+    },
+    {
+      "sample_id": "13728229",
+      "turn_count": 23,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22,
+        23
+      ],
+      "stream_total_latency_sec": 4.974905960000115,
+      "stream_mean_update_latency_sec": 0.5527673288889017,
+      "batch_latency_sec": 0.5463118330000043,
+      "stream_peak_memory_mb": 211.125,
+      "batch_peak_memory_mb": 210.671875
+    },
+    {
+      "sample_id": "13680571",
+      "turn_count": 8,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        8
+      ],
+      "stream_total_latency_sec": 2.227706167000065,
+      "stream_mean_update_latency_sec": 0.5569265417500162,
+      "batch_latency_sec": 0.5504126250000354,
+      "stream_peak_memory_mb": 169.015625,
+      "batch_peak_memory_mb": 169.140625
+    },
+    {
+      "sample_id": "13829773",
+      "turn_count": 17,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16,
+        17
+      ],
+      "stream_total_latency_sec": 3.8966772919999357,
+      "stream_mean_update_latency_sec": 0.5566681845714194,
+      "batch_latency_sec": 0.5562250000000404,
+      "stream_peak_memory_mb": 218.984375,
+      "batch_peak_memory_mb": 219.671875
+    },
+    {
+      "sample_id": "13829332",
+      "turn_count": 3,
+      "stream_steps": [
+        1,
+        3
+      ],
+      "stream_total_latency_sec": 1.1120772919999808,
+      "stream_mean_update_latency_sec": 0.5560386459999904,
+      "batch_latency_sec": 0.5493205830000534,
+      "stream_peak_memory_mb": 163.203125,
+      "batch_peak_memory_mb": 160.53125
+    },
+    {
+      "sample_id": "13862428",
+      "turn_count": 9,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        9
+      ],
+      "stream_total_latency_sec": 2.220357290999914,
+      "stream_mean_update_latency_sec": 0.5550893227499785,
+      "batch_latency_sec": 0.5773933749999287,
+      "stream_peak_memory_mb": 176.703125,
+      "batch_peak_memory_mb": 176.0
+    },
+    {
+      "sample_id": "13716025",
+      "turn_count": 6,
+      "stream_steps": [
+        1,
+        4,
+        6
+      ],
+      "stream_total_latency_sec": 1.6676511249999066,
+      "stream_mean_update_latency_sec": 0.5558837083333023,
+      "batch_latency_sec": 0.5527925830000413,
+      "stream_peak_memory_mb": 171.78125,
+      "batch_peak_memory_mb": 173.1875
+    },
+    {
+      "sample_id": "13810245",
+      "turn_count": 16,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16
+      ],
+      "stream_total_latency_sec": 3.3349445009998817,
+      "stream_mean_update_latency_sec": 0.5558240834999802,
+      "batch_latency_sec": 0.5665192499999421,
+      "stream_peak_memory_mb": 193.703125,
+      "batch_peak_memory_mb": 194.796875
+    },
+    {
+      "sample_id": "13863202",
+      "turn_count": 13,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13
+      ],
+      "stream_total_latency_sec": 2.7563681669998914,
+      "stream_mean_update_latency_sec": 0.5512736333999783,
+      "batch_latency_sec": 0.5497853749999422,
+      "stream_peak_memory_mb": 179.421875,
+      "batch_peak_memory_mb": 179.921875
+    },
+    {
+      "sample_id": "13829473",
+      "turn_count": 4,
+      "stream_steps": [
+        1,
+        4
+      ],
+      "stream_total_latency_sec": 1.0950711679998903,
+      "stream_mean_update_latency_sec": 0.5475355839999452,
+      "batch_latency_sec": 0.5539230419999512,
+      "stream_peak_memory_mb": 166.578125,
+      "batch_peak_memory_mb": 165.515625
+    },
+    {
+      "sample_id": "13819035",
+      "turn_count": 10,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10
+      ],
+      "stream_total_latency_sec": 2.226727417999996,
+      "stream_mean_update_latency_sec": 0.556681854499999,
+      "batch_latency_sec": 0.5549449169999434,
+      "stream_peak_memory_mb": 176.4375,
+      "batch_peak_memory_mb": 181.34375
+    },
+    {
+      "sample_id": "13728057-1",
+      "turn_count": 13,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13
+      ],
+      "stream_total_latency_sec": 2.7752827929998602,
+      "stream_mean_update_latency_sec": 0.555056558599972,
+      "batch_latency_sec": 0.5517538330000207,
+      "stream_peak_memory_mb": 187.046875,
+      "batch_peak_memory_mb": 182.96875
+    },
+    {
+      "sample_id": "13865165",
+      "turn_count": 18,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16,
+        18
+      ],
+      "stream_total_latency_sec": 3.8805802090000725,
+      "stream_mean_update_latency_sec": 0.5543686012857246,
+      "batch_latency_sec": 0.5533766250000554,
+      "stream_peak_memory_mb": 187.875,
+      "batch_peak_memory_mb": 187.171875
+    },
+    {
+      "sample_id": "13817042",
+      "turn_count": 6,
+      "stream_steps": [
+        1,
+        4,
+        6
+      ],
+      "stream_total_latency_sec": 1.668723249999971,
+      "stream_mean_update_latency_sec": 0.5562410833333237,
+      "batch_latency_sec": 0.5513799170000766,
+      "stream_peak_memory_mb": 168.359375,
+      "batch_peak_memory_mb": 168.09375
+    },
+    {
+      "sample_id": "13730929",
+      "turn_count": 8,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        8
+      ],
+      "stream_total_latency_sec": 2.220981459000086,
+      "stream_mean_update_latency_sec": 0.5552453647500215,
+      "batch_latency_sec": 0.5541594160000614,
+      "stream_peak_memory_mb": 168.296875,
+      "batch_peak_memory_mb": 167.0625
+    },
+    {
+      "sample_id": "13863033",
+      "turn_count": 8,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        8
+      ],
+      "stream_total_latency_sec": 2.227334373999952,
+      "stream_mean_update_latency_sec": 0.556833593499988,
+      "batch_latency_sec": 0.5527031670000042,
+      "stream_peak_memory_mb": 169.53125,
+      "batch_peak_memory_mb": 170.421875
+    },
+    {
+      "sample_id": "13829923",
+      "turn_count": 6,
+      "stream_steps": [
+        1,
+        4,
+        6
+      ],
+      "stream_total_latency_sec": 1.6684265840001444,
+      "stream_mean_update_latency_sec": 0.5561421946667148,
+      "batch_latency_sec": 0.5532402500000444,
+      "stream_peak_memory_mb": 168.609375,
+      "batch_peak_memory_mb": 169.40625
+    },
+    {
+      "sample_id": "13729905",
+      "turn_count": 6,
+      "stream_steps": [
+        1,
+        4,
+        6
+      ],
+      "stream_total_latency_sec": 1.6736172090000991,
+      "stream_mean_update_latency_sec": 0.557872403000033,
+      "batch_latency_sec": 0.5530385839999781,
+      "stream_peak_memory_mb": 163.515625,
+      "batch_peak_memory_mb": 164.21875
+    },
+    {
+      "sample_id": "13829307",
+      "turn_count": 5,
+      "stream_steps": [
+        1,
+        4,
+        5
+      ],
+      "stream_total_latency_sec": 1.668263791999948,
+      "stream_mean_update_latency_sec": 0.5560879306666493,
+      "batch_latency_sec": 0.5481258329999719,
+      "stream_peak_memory_mb": 171.453125,
+      "batch_peak_memory_mb": 169.796875
+    },
+    {
+      "sample_id": "13611548",
+      "turn_count": 9,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        9
+      ],
+      "stream_total_latency_sec": 2.221842000000038,
+      "stream_mean_update_latency_sec": 0.5554605000000095,
+      "batch_latency_sec": 0.5500825409999379,
+      "stream_peak_memory_mb": 181.3125,
+      "batch_peak_memory_mb": 182.140625
+    },
+    {
+      "sample_id": "13680802",
+      "turn_count": 11,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        11
+      ],
+      "stream_total_latency_sec": 2.761684334000279,
+      "stream_mean_update_latency_sec": 0.5523368668000558,
+      "batch_latency_sec": 0.5539180840000881,
+      "stream_peak_memory_mb": 172.125,
+      "batch_peak_memory_mb": 173.828125
+    },
+    {
+      "sample_id": "13818220",
+      "turn_count": 5,
+      "stream_steps": [
+        1,
+        4,
+        5
+      ],
+      "stream_total_latency_sec": 1.6550449579999622,
+      "stream_mean_update_latency_sec": 0.551681652666654,
+      "batch_latency_sec": 0.5732906249999132,
+      "stream_peak_memory_mb": 166.703125,
+      "batch_peak_memory_mb": 165.640625
+    },
+    {
+      "sample_id": "13819911",
+      "turn_count": 20,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        20
+      ],
+      "stream_total_latency_sec": 4.439514710000026,
+      "stream_mean_update_latency_sec": 0.5549393387500032,
+      "batch_latency_sec": 0.5540876669999761,
+      "stream_peak_memory_mb": 183.59375,
+      "batch_peak_memory_mb": 183.28125
+    },
+    {
+      "sample_id": "13864554",
+      "turn_count": 4,
+      "stream_steps": [
+        1,
+        4
+      ],
+      "stream_total_latency_sec": 1.1099197910000385,
+      "stream_mean_update_latency_sec": 0.5549598955000192,
+      "batch_latency_sec": 0.56657420800002,
+      "stream_peak_memory_mb": 163.28125,
+      "batch_peak_memory_mb": 163.5
+    },
+    {
+      "sample_id": "13715960",
+      "turn_count": 8,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        8
+      ],
+      "stream_total_latency_sec": 2.211991291000004,
+      "stream_mean_update_latency_sec": 0.552997822750001,
+      "batch_latency_sec": 0.5517864159999135,
+      "stream_peak_memory_mb": 174.546875,
+      "batch_peak_memory_mb": 169.09375
+    },
+    {
+      "sample_id": "13716051",
+      "turn_count": 17,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16,
+        17
+      ],
+      "stream_total_latency_sec": 3.89386578999995,
+      "stream_mean_update_latency_sec": 0.5562665414285642,
+      "batch_latency_sec": 0.5595184999999674,
+      "stream_peak_memory_mb": 209.015625,
+      "batch_peak_memory_mb": 208.34375
+    },
+    {
+      "sample_id": "13680457",
+      "turn_count": 6,
+      "stream_steps": [
+        1,
+        4,
+        6
+      ],
+      "stream_total_latency_sec": 1.6515937919999715,
+      "stream_mean_update_latency_sec": 0.5505312639999905,
+      "batch_latency_sec": 0.5524265409999316,
+      "stream_peak_memory_mb": 168.671875,
+      "batch_peak_memory_mb": 170.703125
+    },
+    {
+      "sample_id": "13821684",
+      "turn_count": 4,
+      "stream_steps": [
+        1,
+        4
+      ],
+      "stream_total_latency_sec": 1.1051376670000082,
+      "stream_mean_update_latency_sec": 0.5525688335000041,
+      "batch_latency_sec": 0.5545370830000138,
+      "stream_peak_memory_mb": 164.484375,
+      "batch_peak_memory_mb": 162.1875
+    },
+    {
+      "sample_id": "13817976",
+      "turn_count": 10,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10
+      ],
+      "stream_total_latency_sec": 2.24377245900007,
+      "stream_mean_update_latency_sec": 0.5609431147500175,
+      "batch_latency_sec": 0.5594425839999531,
+      "stream_peak_memory_mb": 178.046875,
+      "batch_peak_memory_mb": 179.40625
+    },
+    {
+      "sample_id": "13612149-1",
+      "turn_count": 13,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13
+      ],
+      "stream_total_latency_sec": 2.7621698770000194,
+      "stream_mean_update_latency_sec": 0.5524339754000038,
+      "batch_latency_sec": 0.553171916999986,
+      "stream_peak_memory_mb": 184.296875,
+      "batch_peak_memory_mb": 189.453125
+    },
+    {
+      "sample_id": "13818620",
+      "turn_count": 9,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        9
+      ],
+      "stream_total_latency_sec": 2.2074550000000954,
+      "stream_mean_update_latency_sec": 0.5518637500000239,
+      "batch_latency_sec": 0.5667462090000299,
+      "stream_peak_memory_mb": 174.71875,
+      "batch_peak_memory_mb": 173.765625
+    },
+    {
+      "sample_id": "13810034",
+      "turn_count": 6,
+      "stream_steps": [
+        1,
+        4,
+        6
+      ],
+      "stream_total_latency_sec": 1.676067375000116,
+      "stream_mean_update_latency_sec": 0.5586891250000386,
+      "batch_latency_sec": 0.5522539580000512,
+      "stream_peak_memory_mb": 170.109375,
+      "batch_peak_memory_mb": 169.984375
+    },
+    {
+      "sample_id": "13680607",
+      "turn_count": 7,
+      "stream_steps": [
+        1,
+        4,
+        7
+      ],
+      "stream_total_latency_sec": 1.6689900839999154,
+      "stream_mean_update_latency_sec": 0.5563300279999718,
+      "batch_latency_sec": 0.5521946669999807,
+      "stream_peak_memory_mb": 167.65625,
+      "batch_peak_memory_mb": 168.765625
+    },
+    {
+      "sample_id": "13821155",
+      "turn_count": 7,
+      "stream_steps": [
+        1,
+        4,
+        7
+      ],
+      "stream_total_latency_sec": 1.6766446249999944,
+      "stream_mean_update_latency_sec": 0.5588815416666648,
+      "batch_latency_sec": 0.5534808749999911,
+      "stream_peak_memory_mb": 171.390625,
+      "batch_peak_memory_mb": 170.09375
+    },
+    {
+      "sample_id": "13681586",
+      "turn_count": 6,
+      "stream_steps": [
+        1,
+        4,
+        6
+      ],
+      "stream_total_latency_sec": 1.6895188329999655,
+      "stream_mean_update_latency_sec": 0.5631729443333219,
+      "batch_latency_sec": 0.5541046250000363,
+      "stream_peak_memory_mb": 174.3125,
+      "batch_peak_memory_mb": 177.5
+    },
+    {
+      "sample_id": "13681541",
+      "turn_count": 19,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19
+      ],
+      "stream_total_latency_sec": 4.401745582999979,
+      "stream_mean_update_latency_sec": 0.6288207975714256,
+      "batch_latency_sec": 1.0502657499999941,
+      "stream_peak_memory_mb": 236.25,
+      "batch_peak_memory_mb": 238.21875
+    },
+    {
+      "sample_id": "13680611",
+      "turn_count": 5,
+      "stream_steps": [
+        1,
+        4,
+        5
+      ],
+      "stream_total_latency_sec": 1.684174166000048,
+      "stream_mean_update_latency_sec": 0.5613913886666827,
+      "batch_latency_sec": 0.5535189580000406,
+      "stream_peak_memory_mb": 163.328125,
+      "batch_peak_memory_mb": 165.1875
+    },
+    {
+      "sample_id": "13729722",
+      "turn_count": 5,
+      "stream_steps": [
+        1,
+        4,
+        5
+      ],
+      "stream_total_latency_sec": 1.673780541000042,
+      "stream_mean_update_latency_sec": 0.5579268470000139,
+      "batch_latency_sec": 0.5554874169999948,
+      "stream_peak_memory_mb": 171.34375,
+      "batch_peak_memory_mb": 170.65625
+    },
+    {
+      "sample_id": "13730529",
+      "turn_count": 21,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        21
+      ],
+      "stream_total_latency_sec": 4.448102665999954,
+      "stream_mean_update_latency_sec": 0.5560128332499943,
+      "batch_latency_sec": 0.5502819579999141,
+      "stream_peak_memory_mb": 206.453125,
+      "batch_peak_memory_mb": 211.140625
+    },
+    {
+      "sample_id": "13813575",
+      "turn_count": 10,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10
+      ],
+      "stream_total_latency_sec": 2.2197291660002065,
+      "stream_mean_update_latency_sec": 0.5549322915000516,
+      "batch_latency_sec": 0.5600448750000169,
+      "stream_peak_memory_mb": 185.25,
+      "batch_peak_memory_mb": 185.0625
+    },
+    {
+      "sample_id": "13865384",
+      "turn_count": 15,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        15
+      ],
+      "stream_total_latency_sec": 3.3787172919999193,
+      "stream_mean_update_latency_sec": 0.5631195486666533,
+      "batch_latency_sec": 0.5510312090000298,
+      "stream_peak_memory_mb": 192.734375,
+      "batch_peak_memory_mb": 185.171875
+    },
+    {
+      "sample_id": "13728017",
+      "turn_count": 6,
+      "stream_steps": [
+        1,
+        4,
+        6
+      ],
+      "stream_total_latency_sec": 1.6559355010000445,
+      "stream_mean_update_latency_sec": 0.5519785003333482,
+      "batch_latency_sec": 0.5562454170000137,
+      "stream_peak_memory_mb": 163.84375,
+      "batch_peak_memory_mb": 164.40625
+    },
+    {
+      "sample_id": "13729058",
+      "turn_count": 24,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22,
+        24
+      ],
+      "stream_total_latency_sec": 5.045008749999852,
+      "stream_mean_update_latency_sec": 0.5605565277777613,
+      "batch_latency_sec": 0.5587352080000301,
+      "stream_peak_memory_mb": 228.609375,
+      "batch_peak_memory_mb": 230.109375
+    },
+    {
+      "sample_id": "13611803",
+      "turn_count": 10,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10
+      ],
+      "stream_total_latency_sec": 2.234448873999895,
+      "stream_mean_update_latency_sec": 0.5586122184999738,
+      "batch_latency_sec": 0.5591992079999955,
+      "stream_peak_memory_mb": 172.484375,
+      "batch_peak_memory_mb": 172.5625
+    },
+    {
+      "sample_id": "13729817",
+      "turn_count": 20,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        20
+      ],
+      "stream_total_latency_sec": 4.4886677499999905,
+      "stream_mean_update_latency_sec": 0.5610834687499988,
+      "batch_latency_sec": 0.5587689999999839,
+      "stream_peak_memory_mb": 184.046875,
+      "batch_peak_memory_mb": 182.46875
+    },
+    {
+      "sample_id": "13728051",
+      "turn_count": 6,
+      "stream_steps": [
+        1,
+        4,
+        6
+      ],
+      "stream_total_latency_sec": 1.680793375999997,
+      "stream_mean_update_latency_sec": 0.5602644586666656,
+      "batch_latency_sec": 0.5613419589999467,
+      "stream_peak_memory_mb": 169.53125,
+      "batch_peak_memory_mb": 169.421875
+    },
+    {
+      "sample_id": "13810694",
+      "turn_count": 14,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        14
+      ],
+      "stream_total_latency_sec": 3.3740111649999562,
+      "stream_mean_update_latency_sec": 0.5623351941666593,
+      "batch_latency_sec": 0.5625484170000163,
+      "stream_peak_memory_mb": 178.890625,
+      "batch_peak_memory_mb": 178.9375
+    },
+    {
+      "sample_id": "13820547",
+      "turn_count": 18,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16,
+        18
+      ],
+      "stream_total_latency_sec": 3.923691334999944,
+      "stream_mean_update_latency_sec": 0.5605273335714206,
+      "batch_latency_sec": 0.564834792000056,
+      "stream_peak_memory_mb": 184.671875,
+      "batch_peak_memory_mb": 185.046875
+    },
+    {
+      "sample_id": "13731456",
+      "turn_count": 13,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13
+      ],
+      "stream_total_latency_sec": 2.8322988770000848,
+      "stream_mean_update_latency_sec": 0.5664597754000169,
+      "batch_latency_sec": 0.5646861669999907,
+      "stream_peak_memory_mb": 174.390625,
+      "batch_peak_memory_mb": 173.640625
+    },
+    {
+      "sample_id": "13728313",
+      "turn_count": 22,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22
+      ],
+      "stream_total_latency_sec": 4.496976581999888,
+      "stream_mean_update_latency_sec": 0.562122072749986,
+      "batch_latency_sec": 0.5579562089999399,
+      "stream_peak_memory_mb": 226.0,
+      "batch_peak_memory_mb": 218.453125
+    },
+    {
+      "sample_id": "13730868",
+      "turn_count": 5,
+      "stream_steps": [
+        1,
+        4,
+        5
+      ],
+      "stream_total_latency_sec": 1.6913965429999962,
+      "stream_mean_update_latency_sec": 0.5637988476666654,
+      "batch_latency_sec": 0.5492596249999906,
+      "stream_peak_memory_mb": 165.90625,
+      "batch_peak_memory_mb": 166.484375
+    },
+    {
+      "sample_id": "13862919",
+      "turn_count": 6,
+      "stream_steps": [
+        1,
+        4,
+        6
+      ],
+      "stream_total_latency_sec": 1.6662708329999987,
+      "stream_mean_update_latency_sec": 0.5554236109999996,
+      "batch_latency_sec": 0.5605229999999892,
+      "stream_peak_memory_mb": 163.671875,
+      "batch_peak_memory_mb": 163.59375
+    },
+    {
+      "sample_id": "13682034",
+      "turn_count": 20,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        20
+      ],
+      "stream_total_latency_sec": 4.498566250999943,
+      "stream_mean_update_latency_sec": 0.5623207813749929,
+      "batch_latency_sec": 0.561816958999998,
+      "stream_peak_memory_mb": 184.015625,
+      "batch_peak_memory_mb": 183.0625
+    },
+    {
+      "sample_id": "13814407",
+      "turn_count": 12,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        12
+      ],
+      "stream_total_latency_sec": 2.8030017499999076,
+      "stream_mean_update_latency_sec": 0.5606003499999815,
+      "batch_latency_sec": 0.5593276659999447,
+      "stream_peak_memory_mb": 190.375,
+      "batch_peak_memory_mb": 191.375
+    },
+    {
+      "sample_id": "13728444-1",
+      "turn_count": 4,
+      "stream_steps": [
+        1,
+        4
+      ],
+      "stream_total_latency_sec": 1.1313877500000444,
+      "stream_mean_update_latency_sec": 0.5656938750000222,
+      "batch_latency_sec": 0.5633980000000065,
+      "stream_peak_memory_mb": 160.703125,
+      "batch_peak_memory_mb": 160.546875
+    },
+    {
+      "sample_id": "13829161",
+      "turn_count": 10,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10
+      ],
+      "stream_total_latency_sec": 2.2334174159998383,
+      "stream_mean_update_latency_sec": 0.5583543539999596,
+      "batch_latency_sec": 0.5695664170000327,
+      "stream_peak_memory_mb": 176.96875,
+      "batch_peak_memory_mb": 176.796875
+    },
+    {
+      "sample_id": "13680110",
+      "turn_count": 5,
+      "stream_steps": [
+        1,
+        4,
+        5
+      ],
+      "stream_total_latency_sec": 1.7110192929999357,
+      "stream_mean_update_latency_sec": 0.5703397643333119,
+      "batch_latency_sec": 0.5622262090000731,
+      "stream_peak_memory_mb": 164.34375,
+      "batch_peak_memory_mb": 164.546875
+    },
+    {
+      "sample_id": "13862785",
+      "turn_count": 14,
+      "stream_steps": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        14
+      ],
+      "stream_total_latency_sec": 3.34966471000007,
+      "stream_mean_update_latency_sec": 0.5582774516666783,
+      "batch_latency_sec": 0.5607642500000338,
+      "stream_peak_memory_mb": 179.65625,
+      "batch_peak_memory_mb": 179.796875
+    },
+    {
+      "sample_id": "13681246",
+      "turn_count": 3,
+      "stream_steps": [
+        1,
+        3
+      ],
+      "stream_total_latency_sec": 1.1324410419999822,
+      "stream_mean_update_latency_sec": 0.5662205209999911,
+      "batch_latency_sec": 0.5607907500000238,
+      "stream_peak_memory_mb": 161.53125,
+      "batch_peak_memory_mb": 161.421875
+    },
+    {
+      "sample_id": "13715777",
+      "turn_count": 5,
+      "stream_steps": [
+        1,
+        4,
+        5
+      ],
+      "stream_total_latency_sec": 1.674927417000049,
+      "stream_mean_update_latency_sec": 0.5583091390000163,
+      "batch_latency_sec": 0.5615457909999577,
+      "stream_peak_memory_mb": 169.328125,
+      "batch_peak_memory_mb": 169.4375
+    },
+    {
+      "sample_id": "13729335",
+      "turn_count": 6,
+      "stream_steps": [
+        1,
+        4,
+        6
+      ],
+      "stream_total_latency_sec": 1.6848642500000324,
+      "stream_mean_update_latency_sec": 0.5616214166666774,
+      "batch_latency_sec": 0.5600461249999853,
+      "stream_peak_memory_mb": 165.421875,
+      "batch_peak_memory_mb": 165.53125
+    }
+  ],
+  "dataset_size": 100,
+  "subset_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99
+  ],
+  "subset_split": "test",
+  "subset_selection_mode": "first_n"
+}

@@ -1,0 +1,72 @@
+{
+  "direction_path": "outputs/analysis/steering/directions/direction.pt",
+  "action_count": 44,
+  "topic_count": 44,
+  "balanced_subset_size": 88,
+  "dropped_low_quality": 1,
+  "layers": [
+    3,
+    4,
+    5,
+    6
+  ],
+  "normalized": true,
+  "direction_norms": {
+    "3": 1.000000238418579,
+    "4": 1.0000001192092896,
+    "5": 0.9999999403953552,
+    "6": 0.9999999403953552
+  },
+  "label_preview": [
+    {
+      "sample_id": "test_0000",
+      "label": "topic",
+      "reference_summary": "Hannah needs Betty's number but Amanda doesn't have it. She needs to contact Larry."
+    },
+    {
+      "sample_id": "test_0001",
+      "label": "action",
+      "reference_summary": "Eric and Rob are going to watch a stand-up on youtube."
+    },
+    {
+      "sample_id": "test_0002",
+      "label": "topic",
+      "reference_summary": "Lenny can't decide which trousers to buy. Bob advised Lenny on that topic. Lenny goes with Bob's advice to pick the trousers that are of best quality."
+    },
+    {
+      "sample_id": "test_0003",
+      "label": "action",
+      "reference_summary": "Emma will be home soon and she will let Will know."
+    },
+    {
+      "sample_id": "test_0004",
+      "label": "action",
+      "reference_summary": "Jane is in Warsaw. Ollie and Jane has a party. Jane lost her calendar. They will get a lunch this week on Friday. Ollie accidentally called Jane and talked about whisky. Jane cancels lunch. They'll meet for a tea at 6 pm."
+    },
+    {
+      "sample_id": "test_0005",
+      "label": "topic",
+      "reference_summary": "Hilary has the keys to the apartment. Benjamin wants to get them and go take a nap. Hilary is having lunch with some French people at La Cantina. Hilary is meeting them at the entrance to the conference hall at 2 pm. Benjamin and Elliot might join them. They're meeting for the drinks in the evening."
+    },
+    {
+      "sample_id": "test_0006",
+      "label": "topic",
+      "reference_summary": "Payton provides Max with websites selling clothes. Payton likes browsing and trying on the clothes but not necessarily buying them. Payton usually buys clothes and books as he loves reading."
+    },
+    {
+      "sample_id": "test_0007",
+      "label": "topic",
+      "reference_summary": "Rita and Tina are bored at work and have still 4 hours left."
+    },
+    {
+      "sample_id": "test_0008",
+      "label": "action",
+      "reference_summary": "Beatrice wants to buy Leo a scarf, but he doesn't like scarves. She cares about his health and will buy him a scarf no matter his opinion."
+    },
+    {
+      "sample_id": "test_0009",
+      "label": "action",
+      "reference_summary": "Eric doesn't know if his parents let him go to Ivan's brother's wedding. Ivan will talk to them."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "prefix": "",
+  "original": {
+    "num_samples": 150,
+    "rougeL": 0.37125218861466514,
+    "coherence": 4.73,
+    "action_completeness": 1.84,
+    "action_verb_mean": 0.47333333333333333
+  },
+  "adversarial": {
+    "num_samples": 150,
+    "rougeL": 0.27984863647550057,
+    "coherence": 4.873333333333333,
+    "action_completeness": 1.9333333333333333,
+    "action_verb_mean": 0.5866666666666667
+  },
+  "degradation": {
+    "rougeL_drop": 0.09140355213916457,
+    "coherence_drop": -0.14333333333333265,
+    "action_drop": -0.09333333333333327,
+    "action_verb_drop": -0.11333333333333334
+  }
+}

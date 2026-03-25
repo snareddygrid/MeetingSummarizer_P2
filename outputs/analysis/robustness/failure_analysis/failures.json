@@ -1,0 +1,2019 @@
+{
+  "num_samples": 150,
+  "num_failures": 79,
+  "failure_type_counts": {
+    "missing_key_info": 61,
+    "wrong_entities": 50,
+    "broken_grammar": 0,
+    "hallucinations": 0
+  },
+  "failure_by_perturbation": {
+    "noise_failure": 73,
+    "overlap_failure": 74,
+    "length_failure": 74,
+    "off_topic_failure": 79
+  },
+  "classification": {
+    "noise_failure": 73,
+    "overlap_failure": 74,
+    "length_failure": 74,
+    "off_topic_failure": 79
+  },
+  "noise_failure": 73,
+  "overlap_failure": 74,
+  "length_failure": 74,
+  "off_topic_failure": 79,
+  "failures": [
+    {
+      "id": "13731487",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info"
+      ],
+      "reference": "Payton provides Max with websites selling clothes. Payton likes browsing and trying on the clothes but not necessarily buying them. Payton usually buys clothes and books as he loves reading.",
+      "original_prediction": "Payton likes shopping, trying on, looking in the mirror and seeing how he looks. ",
+      "adversarial_prediction": "Max and Payotn are going to buy clothes frmo from 2 or 3 of tehm.",
+      "scores": {
+        "overlap_original": 0.21875,
+        "overlap_adversarial": 0.08571428571428572,
+        "entity_original": 0.5,
+        "entity_adversarial": 0.5,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 4.5,
+        "hallucination_original": 0.21428571428571427,
+        "hallucination_adversarial": 0.07692307692307693
+      }
+    },
+    {
+      "id": "13730015",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info",
+        "wrong_entities"
+      ],
+      "reference": "Bella and Eric dismissed a request of a client. Their boss appreciated the decision. He brings in new clients.",
+      "original_prediction": "Bella was angry today in boss's room. He wasn't angry at all. He appreciated on his brave deccision to dismiss the request of client. ",
+      "adversarial_prediction": "Eric and Eirc will plan a team lunch soon. ",
+      "scores": {
+        "overlap_original": 0.25,
+        "overlap_adversarial": 0.125,
+        "entity_original": 0.5,
+        "entity_adversarial": 0.25,
+        "coherence_original": 4.5,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.0,
+        "hallucination_adversarial": 0.2222222222222222
+      }
+    },
+    {
+      "id": "13728966",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info",
+        "wrong_entities"
+      ],
+      "reference": "Mary ran out of money. Carter is going to lend her some in an hour.",
+      "original_prediction": "Carter will give Mary an hour at the train station.",
+      "adversarial_prediction": "SideThread is off-topic, but parking was impossible today. Mary and Mayr watched the game last night.",
+      "scores": {
+        "overlap_original": 0.19047619047619047,
+        "overlap_adversarial": 0.06666666666666667,
+        "entity_original": 1.0,
+        "entity_adversarial": 0.5,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.1,
+        "hallucination_adversarial": 0.11764705882352941
+      }
+    },
+    {
+      "id": "13728735",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info",
+        "wrong_entities"
+      ],
+      "reference": "Jack and May will drink cocktails later.",
+      "original_prediction": "Jack and May will drink cocktails later.",
+      "adversarial_prediction": "Jack and Jakc are talking about cocktails later. The office coffee machine is broken.",
+      "scores": {
+        "overlap_original": 1.0,
+        "overlap_adversarial": 0.23529411764705882,
+        "entity_original": 1.0,
+        "entity_adversarial": 0.5,
+        "coherence_original": 4.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.14285714285714285,
+        "hallucination_adversarial": 0.2857142857142857
+      }
+    },
+    {
+      "id": "13862428",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info",
+        "wrong_entities"
+      ],
+      "reference": "Joseph has sent Ella a photo of Wujek Janek's twin baby cows. Ella is delighted.",
+      "original_prediction": "Ella and Wujek have tween cows.",
+      "adversarial_prediction": "Joseph and Elal watched the game last night. They have tween cows.",
+      "scores": {
+        "overlap_original": 0.17647058823529413,
+        "overlap_adversarial": 0.08333333333333333,
+        "entity_original": 0.5,
+        "entity_adversarial": 0.25,
+        "coherence_original": 4.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.3333333333333333,
+        "hallucination_adversarial": 0.3333333333333333
+      }
+    },
+    {
+      "id": "13810245",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "wrong_entities"
+      ],
+      "reference": "Adele got a new biscuit Labrador Chewy that is 4 months. Her cats keep their distance, and Poppy and Lulu seem to mother Chewy and Speedy wants to play.",
+      "original_prediction": "Adele got a new dog, Poppy and Lulu. Adele took them in as adult dogs and girls like to fight.",
+      "adversarial_prediction": "Adele got a new dog. The weather tomorrow looks bad. Adele and Adlee have a pup biscuit.",
+      "scores": {
+        "overlap_original": 0.23529411764705882,
+        "overlap_adversarial": 0.18181818181818182,
+        "entity_original": 0.42857142857142855,
+        "entity_adversarial": 0.14285714285714285,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.0,
+        "hallucination_adversarial": 0.06666666666666667
+      }
+    },
+    {
+      "id": "13829307",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info",
+        "wrong_entities"
+      ],
+      "reference": "Jenny has left her credit car at the Mary's shop.",
+      "original_prediction": "Mary has left her credit card at Jenny's shop.",
+      "adversarial_prediction": "Mary's credit card is off-topic, but parking was impossible today. SideThread will plan a team lunch soon.",
+      "scores": {
+        "overlap_original": 0.46153846153846156,
+        "overlap_adversarial": 0.07692307692307693,
+        "entity_original": 1.0,
+        "entity_adversarial": 0.5,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.3333333333333333,
+        "hallucination_adversarial": 0.1111111111111111
+      }
+    },
+    {
+      "id": "13680457",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic"
+      ],
+      "failure_types": [
+        "missing_key_info"
+      ],
+      "reference": "Ana wants to visit grandma tomorrow. Catherine will go with her. She will call Anna when she wakes up.",
+      "original_prediction": "Ana and Catherine are going to visit their grandma tomorrow. They will call Ana when they wake up.",
+      "adversarial_prediction": "Ana and Catherine are going to visit grandma tomorrow. The office coffee machine is broken again.",
+      "scores": {
+        "overlap_original": 0.43478260869565216,
+        "overlap_adversarial": 0.2222222222222222,
+        "entity_original": 0.5,
+        "entity_adversarial": 0.5,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.4375,
+        "hallucination_adversarial": 0.25
+      }
+    },
+    {
+      "id": "13817976",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info"
+      ],
+      "reference": "Jane wants to leave at 4.30 instead of 5 because Google Maps suggests the 300 km drive should take them at least 3 hours and she doesn't want to be late. She will wait for Steven at the main entrance.",
+      "original_prediction": "Jane and Steven will meet at 4:30 instead of 5 at the main entrance.",
+      "adversarial_prediction": "Steven and Jnae will meet at 4:30 instead of 5 to reiterate the weather tomorrow.",
+      "scores": {
+        "overlap_original": 0.3125,
+        "overlap_adversarial": 0.2222222222222222,
+        "entity_original": 0.4,
+        "entity_adversarial": 0.2,
+        "coherence_original": 4.5,
+        "coherence_adversarial": 4.5,
+        "hallucination_original": 0.09090909090909091,
+        "hallucination_adversarial": 0.07692307692307693
+      }
+    },
+    {
+      "id": "13680607",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info",
+        "wrong_entities"
+      ],
+      "reference": "Linda and Laura are going to an Italian restaurant tomorrow.",
+      "original_prediction": "Laura and Linda will go to the italian restaurant tommorow.",
+      "adversarial_prediction": "Laura and SideThread will watch the game last night. The office coffee machine is broken again.",
+      "scores": {
+        "overlap_original": 0.42857142857142855,
+        "overlap_adversarial": 0.08695652173913043,
+        "entity_original": 0.6666666666666666,
+        "entity_adversarial": 0.3333333333333333,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.2,
+        "hallucination_adversarial": 0.0
+      }
+    },
+    {
+      "id": "13681586",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info"
+      ],
+      "reference": "Mia is going out after work tonight with her female friends. If she wants, Elliot will come and pick her up.",
+      "original_prediction": "Mia and Elliot will go out after work tonight.",
+      "adversarial_prediction": "Mia and Elliot will go out after work tonight. Mia will grab some drinks outside of wrok.",
+      "scores": {
+        "overlap_original": 0.38095238095238093,
+        "overlap_adversarial": 0.2962962962962963,
+        "entity_original": 0.6666666666666666,
+        "entity_adversarial": 0.6666666666666666,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.1111111111111111,
+        "hallucination_adversarial": 0.06666666666666667
+      }
+    },
+    {
+      "id": "13728017",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "wrong_entities"
+      ],
+      "reference": "Ryan and Sebastian are worried about the political situation in Ukraine.",
+      "original_prediction": "Ryan has a bad feeling about Ukraine. Sebastian hopes the leaders of nations will react to this shit.",
+      "adversarial_prediction": "Ryan has a bad feeling about this russian circus. Sebastian and Ryan hope the leaders of nations will react to this shit.",
+      "scores": {
+        "overlap_original": 0.20833333333333334,
+        "overlap_adversarial": 0.19230769230769232,
+        "entity_original": 1.0,
+        "entity_adversarial": 0.6666666666666666,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.1111111111111111,
+        "hallucination_adversarial": 0.1
+      }
+    },
+    {
+      "id": "13730868",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info",
+        "wrong_entities"
+      ],
+      "reference": "Tom will meet Ben in the Oval Room at 2pm and tells him to bring the papers.",
+      "original_prediction": "Tom will be there at 2pm in the Oval Room.",
+      "adversarial_prediction": "Ben will take all his papers, it's going to be a... to be honest.",
+      "scores": {
+        "overlap_original": 0.4444444444444444,
+        "overlap_adversarial": 0.16666666666666666,
+        "entity_original": 0.75,
+        "entity_adversarial": 0.25,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 4.5,
+        "hallucination_original": 0.1,
+        "hallucination_adversarial": 0.08333333333333333
+      }
+    },
+    {
+      "id": "13728444-1",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic"
+      ],
+      "failure_types": [
+        "missing_key_info",
+        "wrong_entities"
+      ],
+      "reference": "Maddie will buy a white bread and apples on John's request.",
+      "original_prediction": "Maddie is in Asda. John needs a white bread and some apples.",
+      "adversarial_prediction": "Maddie is in Asad. The office coffee machine is broken again.",
+      "scores": {
+        "overlap_original": 0.35294117647058826,
+        "overlap_adversarial": 0.05,
+        "entity_original": 1.0,
+        "entity_adversarial": 0.5,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.16666666666666666,
+        "hallucination_adversarial": 0.0
+      }
+    },
+    {
+      "id": "13829161",
+      "perturbations": [
+        "overlap",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "wrong_entities"
+      ],
+      "reference": "Elliot can't talk to Jordan now, he's busy. He'll call him back at 8 pm. Jordan is going to Brad's funeral. He had liver cancer.",
+      "original_prediction": "Elliot will call Jordan at 8 pm.",
+      "adversarial_prediction": "Elliot will call a team lunch at 8 pm.",
+      "scores": {
+        "overlap_original": 0.21739130434782608,
+        "overlap_adversarial": 0.15384615384615385,
+        "entity_original": 0.5,
+        "entity_adversarial": 0.25,
+        "coherence_original": 3.5,
+        "coherence_adversarial": 4.5,
+        "hallucination_original": 0.16666666666666666,
+        "hallucination_adversarial": 0.125
+      }
+    },
+    {
+      "id": "13729335",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info"
+      ],
+      "reference": "According to Jacky, David did the right thing taking the blame. They will talk when Jack comes back home.",
+      "original_prediction": "Jacky is right about most things. David will call him when he gets home.",
+      "adversarial_prediction": "Jacky's office coffee machine is broken again.",
+      "scores": {
+        "overlap_original": 0.23076923076923078,
+        "overlap_adversarial": 0.0,
+        "entity_original": 0.4,
+        "entity_adversarial": 0.2,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 4.0,
+        "hallucination_original": 0.35714285714285715,
+        "hallucination_adversarial": 0.14285714285714285
+      }
+    },
+    {
+      "id": "13682284",
+      "perturbations": [
+        "overlap",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info"
+      ],
+      "reference": "Adelle has to clean the hamster cage after school.",
+      "original_prediction": "Pete cleaned the hamster cage after school.",
+      "adversarial_prediction": "Pete cleaned the hamster cage.",
+      "scores": {
+        "overlap_original": 0.45454545454545453,
+        "overlap_adversarial": 0.2727272727272727,
+        "entity_original": 0.0,
+        "entity_adversarial": 0.0,
+        "coherence_original": 4.0,
+        "coherence_adversarial": 4.0,
+        "hallucination_original": 0.14285714285714285,
+        "hallucination_adversarial": 0.2
+      }
+    },
+    {
+      "id": "13862773",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info"
+      ],
+      "reference": "Maya will buy 5 packs of earplugs for Randolph at the pharmacy.",
+      "original_prediction": "Randolph is still in the pharmacy. Maya will buy her some earplugs.",
+      "adversarial_prediction": "Randolph's office coffee machine is broken again. Maya will buy some earplugs.",
+      "scores": {
+        "overlap_original": 0.4375,
+        "overlap_adversarial": 0.21052631578947367,
+        "entity_original": 1.0,
+        "entity_adversarial": 1.0,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.25,
+        "hallucination_adversarial": 0.16666666666666666
+      }
+    },
+    {
+      "id": "13828103",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "wrong_entities"
+      ],
+      "reference": "Fatima is worried about Jenson and Alene. Alene has issues. Lincoln doesn't want Fatima to worry about others too much.",
+      "original_prediction": "Lincoln talked to Jenson, he's not too happy. He thinks Alene may have a depression and needs a doctor.",
+      "adversarial_prediction": "Random's office coffee machine is broken again. Fatima has a depression and she needs a doctor to be honest.",
+      "scores": {
+        "overlap_original": 0.20689655172413793,
+        "overlap_adversarial": 0.16666666666666666,
+        "entity_original": 0.75,
+        "entity_adversarial": 0.25,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.05555555555555555,
+        "hallucination_adversarial": 0.05555555555555555
+      }
+    },
+    {
+      "id": "13680992",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info"
+      ],
+      "reference": "Mr. Williams invites Ms. Blair for a coffee. They will go to her favourite coffee place near the square in a side alley at 2 p.m.",
+      "original_prediction": "Ms. Williams would like to go for a coffee at 2 p.m.",
+      "adversarial_prediction": "Mr. Williams will plan a team lunch soon.",
+      "scores": {
+        "overlap_original": 0.38461538461538464,
+        "overlap_adversarial": 0.14285714285714285,
+        "entity_original": 0.4,
+        "entity_adversarial": 0.4,
+        "coherence_original": 4.5,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.08333333333333333,
+        "hallucination_adversarial": 0.125
+      }
+    },
+    {
+      "id": "13864454",
+      "perturbations": [
+        "overlap",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info",
+        "wrong_entities"
+      ],
+      "reference": "Mike, Tom and Ben will go for a beer.",
+      "original_prediction": "Mike and Ben are going for a beer.",
+      "adversarial_prediction": "SideThread will plan a team lunch soon.",
+      "scores": {
+        "overlap_original": 0.5454545454545454,
+        "overlap_adversarial": 0.14285714285714285,
+        "entity_original": 0.6666666666666666,
+        "entity_adversarial": 0.0,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 4.0,
+        "hallucination_original": 0.375,
+        "hallucination_adversarial": 0.14285714285714285
+      }
+    },
+    {
+      "id": "13716618",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info",
+        "wrong_entities"
+      ],
+      "reference": "Miranda called Tom yesterday and spoke to him in a sweet way. Anne is angry with her because Anne is dating Tom.",
+      "original_prediction": "Anne hates that bitch. Nora missed something. She called Tom, was all sweet with him.",
+      "adversarial_prediction": "Anne hates a bitch. The office coffee machine is broken again.",
+      "scores": {
+        "overlap_original": 0.21428571428571427,
+        "overlap_adversarial": 0.1111111111111111,
+        "entity_original": 0.6666666666666666,
+        "entity_adversarial": 0.3333333333333333,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.06666666666666667,
+        "hallucination_adversarial": 0.18181818181818182
+      }
+    },
+    {
+      "id": "13681928",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info",
+        "wrong_entities"
+      ],
+      "reference": "Lily spent an amazing night with Thomas. Thomas is Romanian and comes from a very rich family.",
+      "original_prediction": "Lily spent an amazing night with Thomas. He is Romanian, but from an extremely rich family.",
+      "adversarial_prediction": "Lily spent a night with a guy. The office coffee machine is broken again.",
+      "scores": {
+        "overlap_original": 0.631578947368421,
+        "overlap_adversarial": 0.2608695652173913,
+        "entity_original": 1.0,
+        "entity_adversarial": 0.3333333333333333,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.0,
+        "hallucination_adversarial": 0.0
+      }
+    },
+    {
+      "id": "13611436",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info"
+      ],
+      "reference": "Peter has been working out at the gym near their office lately to improve his health. Lisa is considering working out and eating better to be healthier.",
+      "original_prediction": "Peter has been working out late. Peter wants to get in shape. Peter is going to a Gym. Peter has a membership with the one near his office.",
+      "adversarial_prediction": "Peter and Lisa have been donig off late. They should plan a team lunch soon.",
+      "scores": {
+        "overlap_original": 0.35294117647058826,
+        "overlap_adversarial": 0.11428571428571428,
+        "entity_original": 0.5,
+        "entity_adversarial": 1.0,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.18181818181818182,
+        "hallucination_adversarial": 0.06666666666666667
+      }
+    },
+    {
+      "id": "13864408",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info",
+        "wrong_entities"
+      ],
+      "reference": "Jessica bought a table, six chairs, a vase and a pile of clothes and the second hand shop downtown. She paid 70 euros for everything.",
+      "original_prediction": "Jessica went to the second hand shop downtown. She bought a table, six chairs, a vase and a pile of clothes.",
+      "adversarial_prediction": "Jessica went to a table, six chairs and a pile of clothes as she said before.",
+      "scores": {
+        "overlap_original": 0.7391304347826086,
+        "overlap_adversarial": 0.38461538461538464,
+        "entity_original": 1.0,
+        "entity_adversarial": 0.5,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.05263157894736842,
+        "hallucination_adversarial": 0.06666666666666667
+      }
+    },
+    {
+      "id": "13681509",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "wrong_entities"
+      ],
+      "reference": "Abigail and Damien are going to church on Sunday. Damien has to put on a coat and tie.",
+      "original_prediction": "Abigail's Sunday is only once a week. Damien will forgive him.",
+      "adversarial_prediction": "Abigail and Abigali watch Sundaay's game last night. The game is only onec a week.",
+      "scores": {
+        "overlap_original": 0.13636363636363635,
+        "overlap_adversarial": 0.12,
+        "entity_original": 1.0,
+        "entity_adversarial": 0.3333333333333333,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.2727272727272727,
+        "hallucination_adversarial": 0.07142857142857142
+      }
+    },
+    {
+      "id": "13682223",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "wrong_entities"
+      ],
+      "reference": "Lucian is not at home. Desiree wants Lucian to keep her pasta in the microwave.",
+      "original_prediction": "Desiree and Lucian are both at home.",
+      "adversarial_prediction": "Desiree's pasta in the microwave is off-topic but parking was impossible today.",
+      "scores": {
+        "overlap_original": 0.23529411764705882,
+        "overlap_adversarial": 0.22727272727272727,
+        "entity_original": 1.0,
+        "entity_adversarial": 0.5,
+        "coherence_original": 4.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.2857142857142857,
+        "hallucination_adversarial": 0.07692307692307693
+      }
+    },
+    {
+      "id": "13821778",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info",
+        "wrong_entities"
+      ],
+      "reference": "Emily, Kate and Marta are going to the Pub X at the central station today for a drink.",
+      "original_prediction": "Marta is going to be in the Pub X at the central station at 5.30.",
+      "adversarial_prediction": "Emily and Ktae are planning a team lunch.",
+      "scores": {
+        "overlap_original": 0.45,
+        "overlap_adversarial": 0.19047619047619047,
+        "entity_original": 0.5,
+        "entity_adversarial": 0.25,
+        "coherence_original": 4.5,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.16666666666666666,
+        "hallucination_adversarial": 0.375
+      }
+    },
+    {
+      "id": "13828146",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info",
+        "wrong_entities"
+      ],
+      "reference": "Today Mary didn't go to school, she stayed at home.",
+      "original_prediction": "Mary stayed at home today.",
+      "adversarial_prediction": "Mray and Alice watched the game last night. The weather tomorrow looks really bad.",
+      "scores": {
+        "overlap_original": 0.5,
+        "overlap_adversarial": 0.0,
+        "entity_original": 0.5,
+        "entity_adversarial": 0.0,
+        "coherence_original": 4.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.0,
+        "hallucination_adversarial": 0.15384615384615385
+      }
+    },
+    {
+      "id": "13819724",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info",
+        "wrong_entities"
+      ],
+      "reference": "Elena is wearing the red jacket and Jeffrey can't see her nor Tom.",
+      "original_prediction": "Tom and Elena are few meters from Tom.",
+      "adversarial_prediction": "Random is off-topic, but parking was impossible today. ",
+      "scores": {
+        "overlap_original": 0.17647058823529413,
+        "overlap_adversarial": 0.047619047619047616,
+        "entity_original": 0.6666666666666666,
+        "entity_adversarial": 0.0,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.2857142857142857,
+        "hallucination_adversarial": 0.0
+      }
+    },
+    {
+      "id": "13819626",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info",
+        "wrong_entities"
+      ],
+      "reference": "Ania, Kasia, Zuzia and Jan want to go to the church tomorrow. Ania and Zuzia do not find it appropriate to go to the church with a boy.",
+      "original_prediction": "Ania and Kasia will go together to the church tomorrow to praise Mary the Queen of Poland together.",
+      "adversarial_prediction": "Ania is going to the church to praise Mary the Queen of Poland together.",
+      "scores": {
+        "overlap_original": 0.3076923076923077,
+        "overlap_adversarial": 0.14814814814814814,
+        "entity_original": 0.5,
+        "entity_adversarial": 0.25,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.13333333333333333,
+        "hallucination_adversarial": 0.08333333333333333
+      }
+    },
+    {
+      "id": "13820543",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info"
+      ],
+      "reference": "Josh, Sean and Logan are going to the pub tonight to pick up some girls. Logan doesn't want Sean to scare the girls away with his inappropriate comments.",
+      "original_prediction": "Josh is going to the pub tonight to pick up some chicks. Logan would like to meet some girls.",
+      "adversarial_prediction": "Josh is going to the pub tongiht. Sean will plan a team lunch soon.",
+      "scores": {
+        "overlap_original": 0.4074074074074074,
+        "overlap_adversarial": 0.2,
+        "entity_original": 0.6666666666666666,
+        "entity_adversarial": 0.6666666666666666,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.0625,
+        "hallucination_adversarial": 0.14285714285714285
+      }
+    },
+    {
+      "id": "13821284",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "wrong_entities"
+      ],
+      "reference": "Miro speaks Albanian with his parents. His family left Albania illegally in 1990s.",
+      "original_prediction": "Abby met Miro yesterday at the party. He told him about his father coming from Albania to the US in the early 1990s.",
+      "adversarial_prediction": "Abby is from Albania to the US in the early 1990s. Dylan told him the story of his father cmoing. ",
+      "scores": {
+        "overlap_original": 0.17857142857142858,
+        "overlap_adversarial": 0.15384615384615385,
+        "entity_original": 0.5,
+        "entity_adversarial": 0.25,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.047619047619047616,
+        "hallucination_adversarial": 0.0
+      }
+    },
+    {
+      "id": "13862329",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "wrong_entities"
+      ],
+      "reference": "Dima's laptop is broken, as her cat spilled coffee on the laptop. Dima is worried, because she has to deliver a translation for Trados tomorrow. Dima will come to Nada in an hour to borrow Nada's laptop.",
+      "original_prediction": "Dima's laptop is broken and she has to deliver a translation tomorrow. Nada has taken these two days off so she can take her laptop.",
+      "adversarial_prediction": "Dima is in a huge trouble, her latpop is broekn and she has to deliver a translation tomorrow. Dima has taken these two days off so she can take her laptop.",
+      "scores": {
+        "overlap_original": 0.325,
+        "overlap_adversarial": 0.2727272727272727,
+        "entity_original": 0.6666666666666666,
+        "entity_adversarial": 0.3333333333333333,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.18181818181818182,
+        "hallucination_adversarial": 0.12
+      }
+    },
+    {
+      "id": "13681757",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info"
+      ],
+      "reference": "Daina needs about an hour more to get ready.",
+      "original_prediction": "Daina needs to put her make up.",
+      "adversarial_prediction": "Daina's office coffee machine is broken again. The weather tomorrow looks really bad.",
+      "scores": {
+        "overlap_original": 0.23076923076923078,
+        "overlap_adversarial": 0.0,
+        "entity_original": 1.0,
+        "entity_adversarial": 1.0,
+        "coherence_original": 4.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.2857142857142857,
+        "hallucination_adversarial": 0.07692307692307693
+      }
+    },
+    {
+      "id": "13821251",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info"
+      ],
+      "reference": "Natalie is pregnant with Dave. Jane didn't think Sally should share it with others as Natalie told them that in confidence. Henriette and Greg are surprised that the father is Dave not Mike.",
+      "original_prediction": "Natalie is a gossip girl. She told her in confidence, she doesn't think she should share it with others.",
+      "adversarial_prediction": "Sally and Jnae have heard about Natalie. ",
+      "scores": {
+        "overlap_original": 0.3235294117647059,
+        "overlap_adversarial": 0.09375,
+        "entity_original": 0.14285714285714285,
+        "entity_adversarial": 0.2857142857142857,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 4.0,
+        "hallucination_original": 0.058823529411764705,
+        "hallucination_adversarial": 0.14285714285714285
+      }
+    },
+    {
+      "id": "13611757",
+      "perturbations": [
+        "overlap",
+        "off_topic"
+      ],
+      "failure_types": [
+        "missing_key_info"
+      ],
+      "reference": "Lisa isn't going home yet. Daisy wants her to be back before 11 p.m.",
+      "original_prediction": "Lisa is going home before 11 pm.",
+      "adversarial_prediction": "Daisy and Random are going home. The office coffee machine is broken again.",
+      "scores": {
+        "overlap_original": 0.25,
+        "overlap_adversarial": 0.125,
+        "entity_original": 0.5,
+        "entity_adversarial": 0.5,
+        "coherence_original": 3.5,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.16666666666666666,
+        "hallucination_adversarial": 0.15384615384615385
+      }
+    },
+    {
+      "id": "13810083",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info"
+      ],
+      "reference": "Cindy is sad, but doesn't want to talk about the reason. Ellie hasn't seen the funny video that went viral.",
+      "original_prediction": "Cindy doesn't want to talk about it. It's viral on the internet.",
+      "adversarial_prediction": "Cindy and Elile are going to talk about the weather tomorrow.",
+      "scores": {
+        "overlap_original": 0.34782608695652173,
+        "overlap_adversarial": 0.2,
+        "entity_original": 0.5,
+        "entity_adversarial": 0.5,
+        "coherence_original": 4.5,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.16666666666666666,
+        "hallucination_adversarial": 0.18181818181818182
+      }
+    },
+    {
+      "id": "13828432",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info"
+      ],
+      "reference": "Julia was at cafe Kohaku near Covent Garden last week, but it's closed down now to her and Henry's surprise. She contacted the owners, but they haven't replied yet. Henry and his cousin went to the Lily's in the end, but it had a different vibe.",
+      "original_prediction": "Julia and Henry went to the Lilly's cafe near Covent Garden last week and wanted to reserve a table, but their Facebook page disappeared. They haven't replied yet. They will reopen somewhere else.",
+      "adversarial_prediction": "Julia and Henry went to the Lilly's cafe near Covent Garden, but the rent is too high. They are closed and they will reopen somewhere esle.",
+      "scores": {
+        "overlap_original": 0.34615384615384615,
+        "overlap_adversarial": 0.26,
+        "entity_original": 0.5714285714285714,
+        "entity_adversarial": 0.5714285714285714,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.0,
+        "hallucination_adversarial": 0.043478260869565216
+      }
+    },
+    {
+      "id": "13821126",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info",
+        "wrong_entities"
+      ],
+      "reference": "Jason had a dental appointment today and that's why he was absent.",
+      "original_prediction": "Jason was absent today. Nathan had a dental appointment.",
+      "adversarial_prediction": "Megan's office coffee machine is broken again. It's off-topic, but parking was impossible today. Megna has a dental appointment.",
+      "scores": {
+        "overlap_original": 0.6153846153846154,
+        "overlap_adversarial": 0.18518518518518517,
+        "entity_original": 1.0,
+        "entity_adversarial": 0.0,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.0,
+        "hallucination_adversarial": 0.15
+      }
+    },
+    {
+      "id": "13862347",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info"
+      ],
+      "reference": "Jill did 20 or 30 so far, 3-4 per day, 40 or 35 hours, so the same as Ally.",
+      "original_prediction": "Jill can't do more than 3-4 per day.",
+      "adversarial_prediction": "SideThread's office coffee machine is broken again. Jill can't do mroe.",
+      "scores": {
+        "overlap_original": 0.1875,
+        "overlap_adversarial": 0.045454545454545456,
+        "entity_original": 0.5,
+        "entity_adversarial": 0.5,
+        "coherence_original": 3.5,
+        "coherence_adversarial": 4.5,
+        "hallucination_original": 0.0,
+        "hallucination_adversarial": 0.09090909090909091
+      }
+    },
+    {
+      "id": "13728698-1",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info",
+        "wrong_entities"
+      ],
+      "reference": "James and Mia want to go to an art exhibition tomorrow. James wants Amelia to go with them but Mia isn't sure about it. James and Mia will go to his place afterwards.",
+      "original_prediction": "Mia and Amelia are going to an art exhibition tomorrow. They will go to the exhibition and to the cinema.",
+      "adversarial_prediction": "Mia and Jaems will go to the exhibition or to the exhibiiton and to the cinema tomorrow.",
+      "scores": {
+        "overlap_original": 0.35714285714285715,
+        "overlap_adversarial": 0.25,
+        "entity_original": 0.6666666666666666,
+        "entity_adversarial": 0.3333333333333333,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.2,
+        "hallucination_adversarial": 0.08333333333333333
+      }
+    },
+    {
+      "id": "13729802",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info",
+        "wrong_entities"
+      ],
+      "reference": "Lori is at Copley. Lori was supposed to meet Maria at Prudential, but misunderstood her. There's a traffic jam, but Lori believes she will meet Maria in several minutes.",
+      "original_prediction": "Lori and Copley will meet at Prudential in 10 minutes. There is a traffic jam.",
+      "adversarial_prediction": "Lori and Loir will meet at Prudenital in 10 minutes. Lori is tired of a traffic jam.",
+      "scores": {
+        "overlap_original": 0.48,
+        "overlap_adversarial": 0.35714285714285715,
+        "entity_original": 0.8,
+        "entity_adversarial": 0.2,
+        "coherence_original": 4.5,
+        "coherence_adversarial": 4.5,
+        "hallucination_original": 0.14285714285714285,
+        "hallucination_adversarial": 0.2
+      }
+    },
+    {
+      "id": "13864448",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info",
+        "wrong_entities"
+      ],
+      "reference": "Karen passed a driving exam.",
+      "original_prediction": "Karen passed. Tim and Patty have a new designated driver.",
+      "adversarial_prediction": "Kaern passed. Tim and Patty have a new designated driver.",
+      "scores": {
+        "overlap_original": 0.25,
+        "overlap_adversarial": 0.15384615384615385,
+        "entity_original": 1.0,
+        "entity_adversarial": 0.0,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.1,
+        "hallucination_adversarial": 0.1
+      }
+    },
+    {
+      "id": "13821669",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info",
+        "wrong_entities"
+      ],
+      "reference": "Ryan is visiting family in Manchester for Christmas. Chris stayed home with Ann.",
+      "original_prediction": "Nick and Chris are visiting family in Manchester. They stayed with Ann first time on their own.",
+      "adversarial_prediction": "Nick and Chris are going to Merry Xmas. The weather is off-topic, but parking was impossible today.",
+      "scores": {
+        "overlap_original": 0.36363636363636365,
+        "overlap_adversarial": 0.06896551724137931,
+        "entity_original": 0.6,
+        "entity_adversarial": 0.2,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.11764705882352941,
+        "hallucination_adversarial": 0.05555555555555555
+      }
+    },
+    {
+      "id": "13821420",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "wrong_entities"
+      ],
+      "reference": "James informs that the next ASEEES conference will be held in San Francisco. Chloe was hoping for Hawaii. James doesn't think there will be a conference in Hawaii soon due to the high cost of travel.",
+      "original_prediction": "Emily has no idea where the next ASEEES conference takes place. Chloe has heard somewhere in California and San Francisco.",
+      "adversarial_prediction": "Chloe has no idea where the ASEEES conference takes palce. The last conference in 1993 was criticised.",
+      "scores": {
+        "overlap_original": 0.2,
+        "overlap_adversarial": 0.16216216216216217,
+        "entity_original": 0.6,
+        "entity_adversarial": 0.2,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.10526315789473684,
+        "hallucination_adversarial": 0.07142857142857142
+      }
+    },
+    {
+      "id": "13816842",
+      "perturbations": [
+        "overlap",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info"
+      ],
+      "reference": "Albert has passed his driving test on the 4th attempt.",
+      "original_prediction": "Albert has just passed the driving exam.",
+      "adversarial_prediction": "Albert has just passed the 4th attempt. It is off-topic, but parking was impossible today.",
+      "scores": {
+        "overlap_original": 0.4166666666666667,
+        "overlap_adversarial": 0.3,
+        "entity_original": 1.0,
+        "entity_adversarial": 1.0,
+        "coherence_original": 4.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.14285714285714285,
+        "hallucination_adversarial": 0.125
+      }
+    },
+    {
+      "id": "13730001",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic"
+      ],
+      "failure_types": [
+        "wrong_entities"
+      ],
+      "reference": "Emily is waiting for Jacob while the buses have almost left.",
+      "original_prediction": "Emily is not on her way. The busses are about to leave.",
+      "adversarial_prediction": "Jacbo will stop the busses. Eimly is not on her way.",
+      "scores": {
+        "overlap_original": 0.15,
+        "overlap_adversarial": 0.1,
+        "entity_original": 0.5,
+        "entity_adversarial": 0.0,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.16666666666666666,
+        "hallucination_adversarial": 0.18181818181818182
+      }
+    },
+    {
+      "id": "13811792",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info"
+      ],
+      "reference": "John is not sure if there is practice today but Matt claims there is.",
+      "original_prediction": "John and Matt have practice today.",
+      "adversarial_prediction": "John and Matt have practiced todya.",
+      "scores": {
+        "overlap_original": 0.3076923076923077,
+        "overlap_adversarial": 0.13333333333333333,
+        "entity_original": 1.0,
+        "entity_adversarial": 1.0,
+        "coherence_original": 4.0,
+        "coherence_adversarial": 4.0,
+        "hallucination_original": 0.16666666666666666,
+        "hallucination_adversarial": 0.3333333333333333
+      }
+    },
+    {
+      "id": "13731258",
+      "perturbations": [
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info",
+        "wrong_entities"
+      ],
+      "reference": "Joy sent Peter the link to her beauty shop.",
+      "original_prediction": "Peter will send Joy the link of his beauty shop.",
+      "adversarial_prediction": "Peter will send Peter the link of his beauty shop. The weather tomorrow looks really bad.",
+      "scores": {
+        "overlap_original": 0.46153846153846156,
+        "overlap_adversarial": 0.2777777777777778,
+        "entity_original": 1.0,
+        "entity_adversarial": 0.5,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.1,
+        "hallucination_adversarial": 0.14285714285714285
+      }
+    },
+    {
+      "id": "13680767",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info"
+      ],
+      "reference": "Blair and Chuck are going to meet the wedding planner after work at Nonna Rita's. The tagliatelle served at Nonna Rita's are very good.",
+      "original_prediction": "Blair and Chuck are seeing the wedding planner after work at Nonna Rita's. They both remmber the spaghetti pomodoro disaster from their last meeting with Diane.",
+      "adversarial_prediction": "Chuck and Diane met at Nonna Rita's. They both remmber the spaghetti pomodoro.",
+      "scores": {
+        "overlap_original": 0.375,
+        "overlap_adversarial": 0.23076923076923078,
+        "entity_original": 0.8,
+        "entity_adversarial": 0.6,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.08,
+        "hallucination_adversarial": 0.23076923076923078
+      }
+    },
+    {
+      "id": "13864673",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "wrong_entities"
+      ],
+      "reference": "Chelsea won a game with Huddersfield this afternoon. Higuain scored twice. Damian's happy about it and he hopes it will be a turning point for Chelsea.",
+      "original_prediction": "Damian and Mason watched Chelsea's game. Higuain scored twice.",
+      "adversarial_prediction": "Damian and Mason have a striker at Huddersfield. They will plan a team lunch soon.",
+      "scores": {
+        "overlap_original": 0.18518518518518517,
+        "overlap_adversarial": 0.12121212121212122,
+        "entity_original": 0.75,
+        "entity_adversarial": 0.5,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.3333333333333333,
+        "hallucination_adversarial": 0.35714285714285715
+      }
+    },
+    {
+      "id": "13828328",
+      "perturbations": [
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info",
+        "wrong_entities"
+      ],
+      "reference": "Caleb sent Ella a pic of Maya to show her the girl's costume as a mouse in a school play.",
+      "original_prediction": "Ella sent Maya a pic of her playing a mouse in a school play. Caleb wants to show her her costume.",
+      "adversarial_prediction": "Ella sent Maya a pic of her playign a mouse in a school play and she wanted to sohw her costume.",
+      "scores": {
+        "overlap_original": 0.75,
+        "overlap_adversarial": 0.5652173913043478,
+        "entity_original": 1.0,
+        "entity_adversarial": 0.6666666666666666,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.058823529411764705,
+        "hallucination_adversarial": 0.0
+      }
+    },
+    {
+      "id": "13864950",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info"
+      ],
+      "reference": "A sweet little black cat got into the pitch during the Everton's football match.",
+      "original_prediction": "Bradley invaded the pitch at Goodison.",
+      "adversarial_prediction": "Bradley and Jill watched the game at Goodison last night, but parking was impossible today.",
+      "scores": {
+        "overlap_original": 0.11764705882352941,
+        "overlap_adversarial": 0.037037037037037035,
+        "entity_original": 0.0,
+        "entity_adversarial": 0.0,
+        "coherence_original": 4.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.0,
+        "hallucination_adversarial": 0.06666666666666667
+      }
+    },
+    {
+      "id": "13863084",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info",
+        "wrong_entities"
+      ],
+      "reference": "Jake has got his first TOTW this year. Tom doesn't have a great team.",
+      "original_prediction": "Jake pulled a TOTW for his first time this year. Tom will try him in one or two matches.",
+      "adversarial_prediction": "Jake has pulled a TOTW from Jkae's squad. He'll try him in one or two matches. Jake will plan a team lunch soon.",
+      "scores": {
+        "overlap_original": 0.32,
+        "overlap_adversarial": 0.16666666666666666,
+        "entity_original": 1.0,
+        "entity_adversarial": 0.5,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.15789473684210525,
+        "hallucination_adversarial": 0.2857142857142857
+      }
+    },
+    {
+      "id": "13681429",
+      "perturbations": [
+        "noise",
+        "off_topic"
+      ],
+      "failure_types": [
+        "wrong_entities"
+      ],
+      "reference": "Cass sent her grandson Jordan £20 and a birthday card for his 11th birthday.",
+      "original_prediction": "Cass got his birthday card and money on time. He picked Thomas the Tank engine specially. Jordan will always love him.",
+      "adversarial_prediction": "Cass got his birthday card and money on time. Jordna picked the engine specially.",
+      "scores": {
+        "overlap_original": 0.2222222222222222,
+        "overlap_adversarial": 0.23809523809523808,
+        "entity_original": 1.0,
+        "entity_adversarial": 0.5,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.14285714285714285,
+        "hallucination_adversarial": 0.14285714285714285
+      }
+    },
+    {
+      "id": "13716782",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info"
+      ],
+      "reference": "The scariest place for Jessica was the Capuchin Catacombs in Palermo.",
+      "original_prediction": "Jessica will start Palermo in Italy with 8000 corpses.",
+      "adversarial_prediction": "Jessica's office coffee machine is broken again. There are the Caupchin Catacombs with 8000 corpses.",
+      "scores": {
+        "overlap_original": 0.2,
+        "overlap_adversarial": 0.09090909090909091,
+        "entity_original": 0.4,
+        "entity_adversarial": 0.4,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.125,
+        "hallucination_adversarial": 0.07142857142857142
+      }
+    },
+    {
+      "id": "13729996",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info",
+        "wrong_entities"
+      ],
+      "reference": "Simon and Charlie admire Poland for its anti-immigration policy and the way it defends its values and interests.",
+      "original_prediction": "Simon and Charlie admire Poles for their willingness to defend the country's values and interests.",
+      "adversarial_prediction": "Simon and Siomn have a chance to fight with internal problems of Europe. The country is being ostracized by defending its values and interests.",
+      "scores": {
+        "overlap_original": 0.36363636363636365,
+        "overlap_adversarial": 0.18181818181818182,
+        "entity_original": 0.6666666666666666,
+        "entity_adversarial": 0.3333333333333333,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.21428571428571427,
+        "hallucination_adversarial": 0.043478260869565216
+      }
+    },
+    {
+      "id": "13716595",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "wrong_entities"
+      ],
+      "reference": "Ed, Valerie, Chris, Lor, Atnee, Jessica, Matt are laughing at the sinfulness of the sex without marriage.",
+      "original_prediction": "Sex is for married people Valerie, Chris, Lor and Atnee. They go get married and leave them all alone.",
+      "adversarial_prediction": "Lor and Atnee watched the game last night. The only purpose for sex is to make babies.",
+      "scores": {
+        "overlap_original": 0.17857142857142858,
+        "overlap_adversarial": 0.14285714285714285,
+        "entity_original": 0.5714285714285714,
+        "entity_adversarial": 0.2857142857142857,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.11764705882352941,
+        "hallucination_adversarial": 0.0625
+      }
+    },
+    {
+      "id": "13828502",
+      "perturbations": [
+        "overlap",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info"
+      ],
+      "reference": "Mike is in London.",
+      "original_prediction": "Jake and Mike are in london.",
+      "adversarial_prediction": "Jake, Mike and SideThread watched the game last night in london.",
+      "scores": {
+        "overlap_original": 0.42857142857142855,
+        "overlap_adversarial": 0.25,
+        "entity_original": 0.5,
+        "entity_adversarial": 0.5,
+        "coherence_original": 4.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.3333333333333333,
+        "hallucination_adversarial": 0.18181818181818182
+      }
+    },
+    {
+      "id": "13611734",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info"
+      ],
+      "reference": "Richie and Clay saw a very good football game, with one football player chopping the ball back to his foot, which was particularly exciting. Jose has trust in that player.",
+      "original_prediction": "Richie was off the seat the moment he chopped the ball back to his right foot. Jose has his trust in him.",
+      "adversarial_prediction": "Richie's office coffee machine is broken again. He chopped the ball back to his right foot. Jose has his turst in him.",
+      "scores": {
+        "overlap_original": 0.34285714285714286,
+        "overlap_adversarial": 0.225,
+        "entity_original": 0.6666666666666666,
+        "entity_adversarial": 0.6666666666666666,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.0,
+        "hallucination_adversarial": 0.047619047619047616
+      }
+    },
+    {
+      "id": "13728825",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info",
+        "wrong_entities"
+      ],
+      "reference": "James is heading to work so he's not watching the game.",
+      "original_prediction": "James is heading to work. Hannah is watching the game.",
+      "adversarial_prediction": "Hannah is watching the game last night. The weather tomorrow looks bad.",
+      "scores": {
+        "overlap_original": 0.6666666666666666,
+        "overlap_adversarial": 0.2222222222222222,
+        "entity_original": 1.0,
+        "entity_adversarial": 0.0,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.2222222222222222,
+        "hallucination_adversarial": 0.09090909090909091
+      }
+    },
+    {
+      "id": "13728981",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info"
+      ],
+      "reference": "Calum and Bethany doubt you can earn 80 thousands as a computer investigator. Calum and Bethany can't imagine taking to customers all day.",
+      "original_prediction": "Bethany has an ad coming up to be a computer investigator and he can earn almost 80 thou. ",
+      "adversarial_prediction": "Calum's ad is coming up to be a computer investigator and he can earn almost 80 thou. It's off-topic, but parking was impossible today.",
+      "scores": {
+        "overlap_original": 0.2857142857142857,
+        "overlap_adversarial": 0.19444444444444445,
+        "entity_original": 0.5,
+        "entity_adversarial": 0.5,
+        "coherence_original": 4.5,
+        "coherence_adversarial": 4.5,
+        "hallucination_original": 0.11764705882352941,
+        "hallucination_adversarial": 0.125
+      }
+    },
+    {
+      "id": "13728942",
+      "perturbations": [
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info",
+        "wrong_entities"
+      ],
+      "reference": "Ziggler will bring the passport tomorrow as reminded by Dolph.",
+      "original_prediction": "Dolph will bring Ziggler's passport tomorrow.",
+      "adversarial_prediction": "SideThread will bring yoru passport tomorow.",
+      "scores": {
+        "overlap_original": 0.45454545454545453,
+        "overlap_adversarial": 0.23076923076923078,
+        "entity_original": 1.0,
+        "entity_adversarial": 0.0,
+        "coherence_original": 4.0,
+        "coherence_adversarial": 4.0,
+        "hallucination_original": 0.16666666666666666,
+        "hallucination_adversarial": 0.0
+      }
+    },
+    {
+      "id": "13810877",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info"
+      ],
+      "reference": "Tina has to learn Demi's approach how to transfer from hating men to dating them.",
+      "original_prediction": "Demi has to learn how to transfer from hating men to fucking them. ",
+      "adversarial_prediction": "Demi and Demi are going to plan a team lunch soon.",
+      "scores": {
+        "overlap_original": 0.6,
+        "overlap_adversarial": 0.045454545454545456,
+        "entity_original": 0.5,
+        "entity_adversarial": 0.5,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.09090909090909091,
+        "hallucination_adversarial": 0.2
+      }
+    },
+    {
+      "id": "13811899",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info",
+        "wrong_entities"
+      ],
+      "reference": "Adele is still listening to the song which Code recommended. Kode will come to Adele's home today and will give her the whole album of the same singer.",
+      "original_prediction": "Adele is still listening to that song. Adele has it in her music library for 3 years. Kode gives Adele a whole Album in USB when she would come to Adele's home.",
+      "adversarial_prediction": "Adele is still listening to the song Kdoe recommends. Adele has it in her music library for 3 years. Aedle and Adele are waiting for a team lunch.",
+      "scores": {
+        "overlap_original": 0.34210526315789475,
+        "overlap_adversarial": 0.23076923076923078,
+        "entity_original": 0.6666666666666666,
+        "entity_adversarial": 0.3333333333333333,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.2222222222222222,
+        "hallucination_adversarial": 0.20833333333333334
+      }
+    },
+    {
+      "id": "13862650",
+      "perturbations": [
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info"
+      ],
+      "reference": "Suzy urges Linda to follow her on Instagram and she obliges.",
+      "original_prediction": "Suzy will follow Linda on Instagram.",
+      "adversarial_prediction": "Suzy will follow Linda on Instagram. The weather tomorrow looks bad.",
+      "scores": {
+        "overlap_original": 0.4166666666666667,
+        "overlap_adversarial": 0.29411764705882354,
+        "entity_original": 1.0,
+        "entity_adversarial": 1.0,
+        "coherence_original": 4.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.16666666666666666,
+        "hallucination_adversarial": 0.09090909090909091
+      }
+    },
+    {
+      "id": "13680903",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info"
+      ],
+      "reference": "Bart didn't do well this semester because he didn't study much. He played a lot fo StarCraft. Adrian did well thanks to paying attention in class",
+      "original_prediction": "Bart's whole semester is screwed up because he didn't study as much as he should have. Adrian started playing StarCraft and ended up wasting a lot of time. ",
+      "adversarial_prediction": "Adrian is screwed up for his whoel semester. Bart is going to study for the economy final.",
+      "scores": {
+        "overlap_original": 0.2631578947368421,
+        "overlap_adversarial": 0.15151515151515152,
+        "entity_original": 0.6666666666666666,
+        "entity_adversarial": 0.6666666666666666,
+        "coherence_original": 4.5,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.08,
+        "hallucination_adversarial": 0.0
+      }
+    },
+    {
+      "id": "13864638",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info"
+      ],
+      "reference": "Margot bought a bottle of nice wine for Nancy's birthday.",
+      "original_prediction": "Don bought a bottle of nice wine for Nancy's birthday.",
+      "adversarial_prediction": "Don didn't buy a bottle for Nancy's birthday.",
+      "scores": {
+        "overlap_original": 0.8181818181818182,
+        "overlap_adversarial": 0.38461538461538464,
+        "entity_original": 0.5,
+        "entity_adversarial": 0.5,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 4.5,
+        "hallucination_original": 0.1,
+        "hallucination_adversarial": 0.0
+      }
+    },
+    {
+      "id": "13611729",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "wrong_entities"
+      ],
+      "reference": "Sean believes his spirit animal is a tortoise and Tiffany's could be a wasp.",
+      "original_prediction": "Sean decided that his spirit animal is a tortoise. Tiffany found out about it recently.",
+      "adversarial_prediction": "Sean has decided that his spirit animal is a tortoise. It is off-topic, but parking was impossible today. Tifafny is haunted.",
+      "scores": {
+        "overlap_original": 0.3333333333333333,
+        "overlap_adversarial": 0.2692307692307692,
+        "entity_original": 1.0,
+        "entity_adversarial": 0.5,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.13333333333333333,
+        "hallucination_adversarial": 0.1
+      }
+    },
+    {
+      "id": "13731296",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "wrong_entities"
+      ],
+      "reference": "Kate is buying apples for herself and George. They have to wait for tangerines until next week.",
+      "original_prediction": "Kate is at the grocery store. George will buy some fruits for school tomorrow.",
+      "adversarial_prediction": "Kate is at the grocery store. She's getting some fruits for school tomorrow. The office coffee machine is broken again. Kate will plan a team lunch next week.",
+      "scores": {
+        "overlap_original": 0.15384615384615385,
+        "overlap_adversarial": 0.1388888888888889,
+        "entity_original": 0.6666666666666666,
+        "entity_adversarial": 0.3333333333333333,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.21428571428571427,
+        "hallucination_adversarial": 0.08
+      }
+    },
+    {
+      "id": "13731361",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info",
+        "wrong_entities"
+      ],
+      "reference": "Julia will call Ronald when she gets back. He has something to tell her.",
+      "original_prediction": "Julia's parents are having a fight over where should we eat. Ronald will call Julia when he gets back.",
+      "adversarial_prediction": "Julia and Rnoald are having a weekend. They are going to fight over where should they eat.",
+      "scores": {
+        "overlap_original": 0.32,
+        "overlap_adversarial": 0.07407407407407407,
+        "entity_original": 0.6666666666666666,
+        "entity_adversarial": 0.3333333333333333,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.21052631578947367,
+        "hallucination_adversarial": 0.13333333333333333
+      }
+    },
+    {
+      "id": "13729445",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info",
+        "wrong_entities"
+      ],
+      "reference": "Matthew has a cold. He will drink some orange juice and go to sleep.",
+      "original_prediction": "Matthew has a cold and needs y'all support. It's painful. Lisa will try some soup.",
+      "adversarial_prediction": "SideThread has a cold. The office coffee machine is broken again. It's painful. Lisa will try it as she said before.",
+      "scores": {
+        "overlap_original": 0.3181818181818182,
+        "overlap_adversarial": 0.12903225806451613,
+        "entity_original": 0.5,
+        "entity_adversarial": 0.0,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.26666666666666666,
+        "hallucination_adversarial": 0.14285714285714285
+      }
+    },
+    {
+      "id": "13681362",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "wrong_entities"
+      ],
+      "reference": "It's raining, so Val and Candy will wait half an hour before they go.",
+      "original_prediction": "Val and Candy are going to be wet.",
+      "adversarial_prediction": "Val and Cadny are going to be wet today.",
+      "scores": {
+        "overlap_original": 0.15789473684210525,
+        "overlap_adversarial": 0.09523809523809523,
+        "entity_original": 0.6666666666666666,
+        "entity_adversarial": 0.3333333333333333,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.25,
+        "hallucination_adversarial": 0.2222222222222222
+      }
+    },
+    {
+      "id": "13821078",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "wrong_entities"
+      ],
+      "reference": "Tomas, Sierra and Jeremy have still not received the grant. Tomas is broke and is checking his bank account every hour. Sierra offers to lend him some money.",
+      "original_prediction": "Tomas hasn't checked Jeremy's bank account every hour, but nothing's happening there.",
+      "adversarial_prediction": "Tomas hasn't received the grant yet.",
+      "scores": {
+        "overlap_original": 0.16129032258064516,
+        "overlap_adversarial": 0.15384615384615385,
+        "entity_original": 0.6666666666666666,
+        "entity_adversarial": 0.3333333333333333,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 4.0,
+        "hallucination_original": 0.16666666666666666,
+        "hallucination_adversarial": 0.16666666666666666
+      }
+    },
+    {
+      "id": "13818744",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info"
+      ],
+      "reference": "Mick's never done any student exchange before, but Amka did. Mick had a plan to go to London for Halloween, but he's not going because of his grandma's health problems. Amka will stay in as well. Mick tells Amka about Halloween in Poland.",
+      "original_prediction": "Amka has never been to Erasmus. Mick has never done any student exchanges before. Amka will go to da club with her friends for Halloween.",
+      "adversarial_prediction": "Amka and Mcik are spending Hlaloween at Erasmus. Amka will go to da club with her friends for Halloween loool.",
+      "scores": {
+        "overlap_original": 0.26666666666666666,
+        "overlap_adversarial": 0.12244897959183673,
+        "entity_original": 0.6,
+        "entity_adversarial": 0.4,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.14285714285714285,
+        "hallucination_adversarial": 0.15789473684210525
+      }
+    },
+    {
+      "id": "13829523",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info",
+        "wrong_entities"
+      ],
+      "reference": "Fiona fell in love with his student, Conrad.",
+      "original_prediction": "Fiona and Wanda are in a room with Conrad. Wanda is 5 years younger than Wanda. She wants to be around him all the time.",
+      "adversarial_prediction": "Fiona, Wanda and Wanad are going to plan a team lunch soon. Wanda is onyl 5 years younger than Wanda.",
+      "scores": {
+        "overlap_original": 0.15384615384615385,
+        "overlap_adversarial": 0.041666666666666664,
+        "entity_original": 1.0,
+        "entity_adversarial": 0.5,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.13636363636363635,
+        "hallucination_adversarial": 0.11764705882352941
+      }
+    },
+    {
+      "id": "13729234",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "missing_key_info",
+        "wrong_entities"
+      ],
+      "reference": "Carl is waiting for Meg who's running late as she can't find her key.",
+      "original_prediction": "Carl is waiting for him. Meg has lost his key somewhere.",
+      "adversarial_prediction": "Carl is still waiting for 5 mintues more.",
+      "scores": {
+        "overlap_original": 0.3157894736842105,
+        "overlap_adversarial": 0.23529411764705882,
+        "entity_original": 1.0,
+        "entity_adversarial": 0.5,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 4.0,
+        "hallucination_original": 0.36363636363636365,
+        "hallucination_adversarial": 0.14285714285714285
+      }
+    },
+    {
+      "id": "13715861",
+      "perturbations": [
+        "overlap",
+        "noise",
+        "off_topic",
+        "length"
+      ],
+      "failure_types": [
+        "wrong_entities"
+      ],
+      "reference": "Ryanair has canceled many flights. This affected Erin, Luke and Ava.",
+      "original_prediction": "Ryanair will cancel flights affecting 400,000 more passengers. Erin is lucky for now, none of his 2 flights have been cancelled. Luke has booked another flight with easyjet.",
+      "adversarial_prediction": "Erin is unlucky with the ryanair fiasco. He has booked another flight with easyjet. The office coffee machine is broken again.",
+      "scores": {
+        "overlap_original": 0.16129032258064516,
+        "overlap_adversarial": 0.11538461538461539,
+        "entity_original": 0.6,
+        "entity_adversarial": 0.2,
+        "coherence_original": 5.0,
+        "coherence_adversarial": 5.0,
+        "hallucination_original": 0.12,
+        "hallucination_adversarial": 0.1111111111111111
+      }
+    }
+  ]
+}

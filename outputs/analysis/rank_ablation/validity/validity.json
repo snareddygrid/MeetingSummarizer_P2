@@ -1,0 +1,32 @@
+{
+  "r2": {
+    "valid": 0,
+    "total": 819,
+    "validity_rate": 0.0,
+    "status": "ok"
+  },
+  "r4": {
+    "valid": 0,
+    "total": 819,
+    "validity_rate": 0.0,
+    "status": "ok"
+  },
+  "r8": {
+    "valid": 0,
+    "total": 819,
+    "validity_rate": 0.0,
+    "status": "ok"
+  },
+  "r16": {
+    "valid": 0,
+    "total": 819,
+    "validity_rate": 0.0,
+    "status": "ok"
+  },
+  "r32": {
+    "valid": 0,
+    "total": 819,
+    "validity_rate": 0.0,
+    "status": "ok"
+  }
+}

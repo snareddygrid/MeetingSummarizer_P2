@@ -1,0 +1,43 @@
+{
+  "rouge_gain": -0.111079,
+  "coherence_gain": 0.003333,
+  "action_gain": -0.253333,
+  "summary": "Adversarial training gave mixed robustness gains.",
+  "pre_training": {
+    "original": {
+      "num_samples": 150,
+      "rougeL": 0.37125218861466514,
+      "coherence": 4.73,
+      "action_completeness": 1.84,
+      "action_verb_mean": 0.47333333333333333
+    },
+    "adversarial": {
+      "num_samples": 150,
+      "rougeL": 0.27984863647550057,
+      "coherence": 4.873333333333333,
+      "action_completeness": 1.9333333333333333,
+      "action_verb_mean": 0.5866666666666667
+    }
+  },
+  "post_training": {
+    "original": {
+      "num_samples": 150,
+      "rougeL": 0.23467672496636813,
+      "coherence": 4.75,
+      "action_completeness": 1.6,
+      "action_verb_mean": 0.34
+    },
+    "adversarial": {
+      "num_samples": 150,
+      "rougeL": 0.16876990863947777,
+      "coherence": 4.876666666666667,
+      "action_completeness": 1.68,
+      "action_verb_mean": 0.4866666666666667
+    }
+  },
+  "clean_set_shift": {
+    "rouge_shift": -0.136575,
+    "coherence_shift": 0.02,
+    "action_shift": -0.24
+  }
+}

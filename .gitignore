@@ -5,5 +5,16 @@ venv/
 __pycache__/
 *.pyc
 .pytest_cache/
-experiments/t5_small_lora
+experiments/t5_small_lora_r2
+experiments/t5_small_lora_r4
+experiments/t5_small_lora_r8
+experiments/t5_small_lora_r16
+experiments/t5_small_lora_robust
 data/
+outputs/analysis/attention/
+experiments/t5_small_lora/checkpoint-1383
+experiments/t5_small_lora/checkpoint-1844
+experiments/t5_small_lora/checkpoint-2305
+experiments/t5_small_lora_r32/checkpoint-5526
+experiments/t5_small_lora_r32/checkpoint-9210
+outputs/analysis/steering/activations

@@ -1,0 +1,22 @@
+{
+  "valid": true,
+  "errors": [],
+  "warnings": [],
+  "expected_subset_size": 100,
+  "expected_lengths": [
+    10,
+    50,
+    100,
+    200
+  ],
+  "expected_processes": [
+    1,
+    2,
+    4
+  ],
+  "expected_quant_levels": [
+    "Q4_K_M",
+    "Q5_K_M",
+    "Q8_0"
+  ]
+}

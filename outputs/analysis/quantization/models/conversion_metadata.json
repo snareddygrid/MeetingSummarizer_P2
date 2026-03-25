@@ -1,0 +1,13 @@
+{
+  "source_model_dir": "experiments/t5_small_lora",
+  "hf_export_dir": "outputs/analysis/quantization/models/intermediate/hf_merged",
+  "gguf_result": {
+    "status": "reused",
+    "gguf_path": "outputs/analysis/quantization/models/intermediate/model.gguf",
+    "reason": "existing_artifact"
+  },
+  "fallback_result": null,
+  "load_info": {
+    "reuse_existing_artifacts": true
+  }
+}

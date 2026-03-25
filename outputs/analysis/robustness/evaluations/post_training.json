@@ -1,0 +1,23 @@
+{
+  "prefix": "post_",
+  "original": {
+    "num_samples": 150,
+    "rougeL": 0.23467672496636813,
+    "coherence": 4.75,
+    "action_completeness": 1.6,
+    "action_verb_mean": 0.34
+  },
+  "adversarial": {
+    "num_samples": 150,
+    "rougeL": 0.16876990863947777,
+    "coherence": 4.876666666666667,
+    "action_completeness": 1.68,
+    "action_verb_mean": 0.4866666666666667
+  },
+  "degradation": {
+    "rougeL_drop": 0.06590681632689036,
+    "coherence_drop": -0.12666666666666693,
+    "action_drop": -0.07999999999999985,
+    "action_verb_drop": -0.14666666666666667
+  }
+}

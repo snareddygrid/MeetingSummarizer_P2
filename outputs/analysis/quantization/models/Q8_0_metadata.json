@@ -1,0 +1,12 @@
+{
+  "backend": "llama_cpp_quantize",
+  "quantization_type": "Q8_0",
+  "bits": 8,
+  "source_f16_gguf": "outputs/analysis/quantization/models/intermediate/model.gguf",
+  "artifact_path": "outputs/analysis/quantization/models/Q8_0.gguf",
+  "serialized_size_mb": 62.336639404296875,
+  "threads": 8,
+  "elapsed_sec": 0.16293487499999992,
+  "stdout_tail": "\nmain: quantize time =   154.14 ms\nmain:    total time =   154.14 ms\n",
+  "stderr_tail": ".. size =     0.50 MiB ->     0.27 MiB\n[ 125/ 131] enc.blk.5.attn_q.weight              - [   512,    512,      1,      1], type =    f16, converting to q8_0 .. size =     0.50 MiB ->     0.27 MiB\n[ 126/ 131] enc.blk.5.attn_v.weight              - [   512,    512,      1,      1], type =    f16, converting to q8_0 .. size =     0.50 MiB ->     0.27 MiB\n[ 127/ 131] enc.blk.5.ffn_down.weight            - [  2048,    512,      1,      1], type =    f16, converting to q8_0 .. size =     2.00 MiB ->     1.06 MiB\n[ 128/ 131] enc.blk.5.ffn_norm.weight            - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB\n[ 129/ 131] enc.blk.5.ffn_up.weight              - [   512,   2048,      1,      1], type =    f16, converting to q8_0 .. size =     2.00 MiB ->     1.06 MiB\n[ 130/ 131] enc.output_norm.weight               - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB\n[ 131/ 131] token_embd.weight                    - [   512,  32128,      1,      1], type =    f16, converting to q8_0 .. size =    31.38 MiB ->    16.67 MiB\nllama_model_quantize_impl: model size  =   115.44 MiB (16.00 BPW)\nllama_model_quantize_impl: quant size  =    61.36 MiB (8.51 BPW)\n"
+}

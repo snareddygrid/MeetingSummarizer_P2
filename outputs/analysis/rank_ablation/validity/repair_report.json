@@ -1,0 +1,47 @@
+{
+  "r2": {
+    "total": 819,
+    "valid_before": 0,
+    "valid_after": 819,
+    "repaired_count": 819,
+    "validity_before": 0.0,
+    "validity_after": 1.0,
+    "status": "ok"
+  },
+  "r4": {
+    "total": 819,
+    "valid_before": 0,
+    "valid_after": 819,
+    "repaired_count": 819,
+    "validity_before": 0.0,
+    "validity_after": 1.0,
+    "status": "ok"
+  },
+  "r8": {
+    "total": 819,
+    "valid_before": 0,
+    "valid_after": 819,
+    "repaired_count": 819,
+    "validity_before": 0.0,
+    "validity_after": 1.0,
+    "status": "ok"
+  },
+  "r16": {
+    "total": 819,
+    "valid_before": 0,
+    "valid_after": 819,
+    "repaired_count": 819,
+    "validity_before": 0.0,
+    "validity_after": 1.0,
+    "status": "ok"
+  },
+  "r32": {
+    "total": 819,
+    "valid_before": 0,
+    "valid_after": 819,
+    "repaired_count": 819,
+    "validity_before": 0.0,
+    "validity_after": 1.0,
+    "status": "ok"
+  }
+}

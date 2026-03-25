@@ -1,0 +1,26 @@
+{
+  "Q4_K_M": {
+    "artifact_path": "outputs/analysis/quantization/models/Q4_K_M.gguf",
+    "bits": 4,
+    "quantization_type": "Q4_K_M",
+    "backend": "llama_cpp_quantize",
+    "status": "reused",
+    "serialized_size_mb": 40.179901123046875
+  },
+  "Q5_K_M": {
+    "artifact_path": "outputs/analysis/quantization/models/Q5_K_M.gguf",
+    "bits": 5,
+    "quantization_type": "Q5_K_M",
+    "backend": "llama_cpp_quantize",
+    "status": "reused",
+    "serialized_size_mb": 44.148651123046875
+  },
+  "Q8_0": {
+    "artifact_path": "outputs/analysis/quantization/models/Q8_0.gguf",
+    "bits": 8,
+    "quantization_type": "Q8_0",
+    "backend": "llama_cpp_quantize",
+    "status": "reused",
+    "serialized_size_mb": 62.336639404296875
+  }
+}

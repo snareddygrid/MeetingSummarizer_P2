@@ -1,0 +1,37 @@
+{
+"best_rank": 32,
+"best_rougeL": 0.3489560510954811,
+
+"json_validity": {
+"raw_model_validity": 0.0,
+"post_processed_validity": 1.0
+},
+
+"latency": {
+"avg_latency_sec": 0.9902880457500011,
+"p95_latency_sec": 1.5835327500000034
+},
+
+"model_size_mb": 125.30136394500732,
+
+"tradeoff_analysis": "Across LoRA ranks (2 → 32), ROUGE-L improved marginally from 0.3361 to 0.3490, indicating diminishing returns with increasing rank. Model size increased significantly (17.03MB → 125.30MB), while latency showed minimal variation. This suggests that higher ranks provide limited performance gains at a much higher memory cost.",
+
+"structured_output_analysis": {
+"observation": "The base T5-small model failed to generate valid JSON outputs using prompt-based structured decoding (0% validity across all ranks).",
+"solution": "A post-processing repair layer (repair_structured_outputs.py) was introduced to convert model outputs into a strict JSON schema with keys: topics, action_items, and decisions.",
+"result": "The repair layer achieved 100% JSON validity across all samples and all ranks.",
+"important_note": "This 100% validity reflects system-level reliability after post-processing, not the intrinsic capability of the model to generate valid JSON."
+},
+
+"comparison_structured_vs_freeform": {
+"rouge_delta": -0.0101,
+"insight": "Structured decoding slightly reduced ROUGE-L scores compared to free-form generation, indicating a trade-off between output format control and content quality."
+},
+
+"final_decision": {
+"selected_rank": 32,
+"reason": "No rank satisfied both constraints (high ROUGE-L and ≥95% raw JSON validity). Rank 32 was selected as it achieved the highest ROUGE-L, while structured output reliability was ensured via the repair layer."
+},
+
+"conclusion": "This experiment demonstrates that increasing LoRA rank provides only marginal improvements in summarization quality, while significantly increasing model size. Additionally, prompt-based structured generation is insufficient for enforcing JSON schema constraints in T5-small. However, integrating a lightweight post-processing repair layer enables 100% structured output reliability at the system level, making the solution suitable for real-world deployment."
+}

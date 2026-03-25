@@ -1,0 +1,57 @@
+{
+  "num_samples": 3,
+  "rouge_by_model": {
+    "BASE_LORA": {
+      "rouge1": 0.380072691498374,
+      "rouge2": 0.06984126984126986,
+      "rougeL": 0.31756529026498687
+    },
+    "Q8_0": {
+      "rouge1": 0.380072691498374,
+      "rouge2": 0.06984126984126986,
+      "rougeL": 0.31756529026498687
+    },
+    "Q5_K_M": {
+      "rouge1": 0.3535756061777593,
+      "rouge2": 0.07341269841269842,
+      "rougeL": 0.2698705366878804
+    },
+    "Q4_K_M": {
+      "rouge1": 0.3249123292727944,
+      "rouge2": 0.07953216374269007,
+      "rougeL": 0.2885751199704688
+    }
+  },
+  "samples": [
+    {
+      "sample_id": "13862856",
+      "reference": "Hannah needs Betty's number but Amanda doesn't have it. She needs to contact Larry.",
+      "predictions": {
+        "BASE_LORA": "Amanda has Betty's number. Amanda can't find it. Larry called her last time she was at the park together.",
+        "Q8_0": "Amanda has Betty's number. Amanda can't find it. Larry called her last time she was at the park together.",
+        "Q5_K_M": "Amanda can't find Betty's number. He called her last time she was at the park together.",
+        "Q4_K_M": "Amanda has Betty's number. He called her last time she was at the park together."
+      }
+    },
+    {
+      "sample_id": "13729565",
+      "reference": "Eric and Rob are going to watch a stand-up on youtube.",
+      "predictions": {
+        "BASE_LORA": "Rob will watch some of Eric's stand-ups on youtube.",
+        "Q8_0": "Rob will watch some of Eric's stand-ups on youtube.",
+        "Q5_K_M": "Rob will watch some of Eric's stand-ups on youtube.",
+        "Q4_K_M": "Rob will watch MACHINE's stand-ups on youtube."
+      }
+    },
+    {
+      "sample_id": "13680171",
+      "reference": "Lenny can't decide which trousers to buy. Bob advised Lenny on that topic. Lenny goes with Bob's advice to pick the trousers that are of best quality.",
+      "predictions": {
+        "BASE_LORA": "Lenny has four black pairs. Bob will buy the first or the third pair.",
+        "Q8_0": "Lenny has four black pairs. Bob will buy the first or the third pair.",
+        "Q5_K_M": "Lenny has four black pairs. Bob will buy the first or the third pair.",
+        "Q4_K_M": "Lenny has four black pairs. Bob will buy the first or the third pair."
+      }
+    }
+  ]
+}

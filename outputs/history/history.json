@@ -258,5 +258,37 @@
     {
         "model": "FLAN-T5-BASE",
         "summary": "Priya and Alex will finalize the launch date on April 15."
+    },
+    {
+        "model": "BART-FULL",
+        "summary": "Alex will share the updated plan today."
+    },
+    {
+        "model": "BART-LoRA",
+        "summary": "Alex will share the updated plan with Priya today."
+    },
+    {
+        "model": "PEGASUS-LoRA",
+        "summary": "Priya and Alex will launch on April 15. Alex will share the updated plan today."
+    },
+    {
+        "model": "FLAN-T5-BASE",
+        "summary": "Priya and Alex will finalize the launch date on April 15."
+    },
+    {
+        "model": "T5-SMALL",
+        "summary": "Alex will share the updated plan today."
+    },
+    {
+        "model": "PEGASUS-LoRA",
+        "summary": "Priya and Alex will launch on April 15. Alex will share the updated plan today."
+    },
+    {
+        "model": "BART-FULL",
+        "summary": "Nina will send the weekly report every Friday."
+    },
+    {
+        "model": "FLAN-T5-BASE",
+        "summary": "Nina will send the weekly report every Friday."
     }
 ]

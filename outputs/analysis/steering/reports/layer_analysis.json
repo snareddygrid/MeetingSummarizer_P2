@@ -1,0 +1,83 @@
+{
+  "eval_samples": 50,
+  "requested_layers": [
+    3,
+    4,
+    5,
+    6
+  ],
+  "resolved_layers": [
+    3,
+    4,
+    5,
+    6
+  ],
+  "layer_resolution": {
+    "requested_layers": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "resolved_layers": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "decoder_depth": 6,
+    "fallback_used": false
+  },
+  "layer_scale": 1.0,
+  "rouge_drop_limit_pct": 2.0,
+  "baseline": {
+    "num_samples": 50,
+    "rouge1": 0.340661368976503,
+    "rouge2": 0.11813725329522709,
+    "rougeL": 0.27400500547310785,
+    "action_score": 0.11116666666666668,
+    "action_verb_count_mean": 0.5,
+    "manual_action_score": null
+  },
+  "per_layer": [
+    {
+      "layer": 3,
+      "scale": 1.0,
+      "rougeL": 0.2671365258472384,
+      "action_score": 0.12416666666666666,
+      "rouge_drop_pct": 2.506698596257416,
+      "action_gain": 0.012999999999999984,
+      "eligible": false
+    },
+    {
+      "layer": 4,
+      "scale": 1.0,
+      "rougeL": 0.2671365258472384,
+      "action_score": 0.12416666666666666,
+      "rouge_drop_pct": 2.506698596257416,
+      "action_gain": 0.012999999999999984,
+      "eligible": false
+    },
+    {
+      "layer": 5,
+      "scale": 1.0,
+      "rougeL": 0.2671365258472384,
+      "action_score": 0.12416666666666666,
+      "rouge_drop_pct": 2.506698596257416,
+      "action_gain": 0.012999999999999984,
+      "eligible": false
+    },
+    {
+      "layer": 6,
+      "scale": 1.0,
+      "rougeL": 0.2736621615645657,
+      "action_score": 0.16666666666666669,
+      "rouge_drop_pct": 0.1251232282965779,
+      "action_gain": 0.05550000000000001,
+      "eligible": true
+    }
+  ],
+  "best_layers": [
+    6
+  ]
+}

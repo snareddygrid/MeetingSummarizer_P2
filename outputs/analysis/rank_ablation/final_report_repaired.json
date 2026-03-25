@@ -1,0 +1,12 @@
+{
+  "best_rank": 32,
+  "best_rougeL": 0.3489560510954811,
+  "json_validity": 1.0,
+  "latency": {
+    "avg_latency_sec": 0.9902880457500011,
+    "p95_latency_sec": 1.5835327500000034
+  },
+  "model_size_mb": 125.30136394500732,
+  "tradeoff_analysis": "Across ranks 2->32, ROUGE-L changed from 0.3361 to 0.3490, average latency changed from 1.1438s to 0.9903s, and model size changed from 17.03MB to 125.30MB. JSON validity after repair is 1.0000 at selected rank.",
+  "conclusion": "Rank 32 provides optimal balance between performance and efficiency with JSON validity >= 95% after repair."
+}

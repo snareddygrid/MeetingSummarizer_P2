@@ -1,0 +1,137 @@
+{
+  "eval_samples": 50,
+  "rouge_drop_limit_pct": 2.0,
+  "results_by_scale": {
+    "0.0": {
+      "num_samples": 50,
+      "rouge1": 0.340661368976503,
+      "rouge2": 0.11813725329522709,
+      "rougeL": 0.27400500547310785,
+      "action_score": 0.11116666666666668,
+      "action_verb_count_mean": 0.5,
+      "manual_action_score": null,
+      "scale": "0.0",
+      "rouge_drop_pct_vs_baseline": 0.0,
+      "action_verb_gain_vs_baseline": 0.0
+    },
+    "0.5": {
+      "num_samples": 50,
+      "rouge1": 0.3475748820584548,
+      "rouge2": 0.12222717652576882,
+      "rougeL": 0.27886700796808744,
+      "action_score": 0.14333333333333334,
+      "action_verb_count_mean": 0.5,
+      "manual_action_score": null,
+      "scale": "0.5",
+      "rouge_drop_pct_vs_baseline": 0.0,
+      "action_verb_gain_vs_baseline": 0.0
+    },
+    "1.0": {
+      "num_samples": 50,
+      "rouge1": 0.34302526130485766,
+      "rouge2": 0.11354724349153525,
+      "rougeL": 0.2736621615645657,
+      "action_score": 0.16666666666666669,
+      "action_verb_count_mean": 0.66,
+      "manual_action_score": null,
+      "scale": "1.0",
+      "rouge_drop_pct_vs_baseline": 0.1251232282965779,
+      "action_verb_gain_vs_baseline": 0.16000000000000003
+    },
+    "1.5": {
+      "num_samples": 50,
+      "rouge1": 0.3503594493524642,
+      "rouge2": 0.11970855859627642,
+      "rougeL": 0.28367125311669694,
+      "action_score": 0.18166666666666667,
+      "action_verb_count_mean": 0.66,
+      "manual_action_score": null,
+      "scale": "1.5",
+      "rouge_drop_pct_vs_baseline": 0.0,
+      "action_verb_gain_vs_baseline": 0.16000000000000003
+    },
+    "2.0": {
+      "num_samples": 50,
+      "rouge1": 0.3180060374495899,
+      "rouge2": 0.10491316977428988,
+      "rougeL": 0.26475159489583666,
+      "action_score": 0.20333333333333337,
+      "action_verb_count_mean": 0.64,
+      "manual_action_score": null,
+      "scale": "2.0",
+      "rouge_drop_pct_vs_baseline": 3.3770954517031138,
+      "action_verb_gain_vs_baseline": 0.14
+    },
+    "3.0": {
+      "num_samples": 50,
+      "rouge1": 0.31369687942162844,
+      "rouge2": 0.1017947842263461,
+      "rougeL": 0.2590472083253961,
+      "action_score": 0.2733333333333334,
+      "action_verb_count_mean": 0.68,
+      "manual_action_score": null,
+      "scale": "3.0",
+      "rouge_drop_pct_vs_baseline": 5.458950328985781,
+      "action_verb_gain_vs_baseline": 0.18000000000000005
+    }
+  },
+  "selection": {
+    "best": {
+      "scale": "1.5",
+      "rougeL": 0.28367125311669694,
+      "action_score": 0.18166666666666667,
+      "rouge_drop_pct": 0.0,
+      "eligible": true
+    },
+    "baseline_rougeL": 0.27400500547310785,
+    "candidates": [
+      {
+        "scale": "0.0",
+        "rougeL": 0.27400500547310785,
+        "action_score": 0.11116666666666668,
+        "rouge_drop_pct": 0.0,
+        "eligible": true
+      },
+      {
+        "scale": "0.5",
+        "rougeL": 0.27886700796808744,
+        "action_score": 0.14333333333333334,
+        "rouge_drop_pct": 0.0,
+        "eligible": true
+      },
+      {
+        "scale": "1.0",
+        "rougeL": 0.2736621615645657,
+        "action_score": 0.16666666666666669,
+        "rouge_drop_pct": 0.1251232282965779,
+        "eligible": true
+      },
+      {
+        "scale": "1.5",
+        "rougeL": 0.28367125311669694,
+        "action_score": 0.18166666666666667,
+        "rouge_drop_pct": 0.0,
+        "eligible": true
+      },
+      {
+        "scale": "2.0",
+        "rougeL": 0.26475159489583666,
+        "action_score": 0.20333333333333337,
+        "rouge_drop_pct": 3.3770954517031138,
+        "eligible": false
+      },
+      {
+        "scale": "3.0",
+        "rougeL": 0.2590472083253961,
+        "action_score": 0.2733333333333334,
+        "rouge_drop_pct": 5.458950328985781,
+        "eligible": false
+      }
+    ],
+    "rouge_drop_limit_pct": 2.0
+  },
+  "best_scale": "1.5",
+  "best_action_score": 0.18166666666666667,
+  "best_rougeL": 0.28367125311669694,
+  "best_rouge_drop_pct": 0.0
+}

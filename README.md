@@ -85,6 +85,169 @@ python src/evaluation_bart_lora.py
 python src/generate_plots.py
 ```
 
+## 🧪 Advanced Analysis Tasks (Task-01 to Task-05)
+The project now includes a full analysis track under `src/Analysis/` with outputs written to `outputs/analysis/`.
+These tasks are designed to answer *why* the model behaves the way it does, not just produce a single ROUGE score.
+
+### Task-01 — Attention Patterns for Speaker Attribution & Key Moment Detection
+**What was implemented**
+- Attention extraction for 100 SAMSum test dialogues (`outputs/analysis/attention/attention_tensors/`).
+- Speaker-aware attribution (`outputs/analysis/attention/speaker_distribution/`).
+- Key moment detection and token-to-turn alignment (`outputs/analysis/attention/key_moments/`).
+- Per-sample reports with top-3 contributing turns (`outputs/analysis/attention/reports/test_*.json`).
+- Heatmap visualizations (`outputs/analysis/attention/heatmaps/`).
+
+**Observed results (100/100 samples processed, 0 failures)**
+- Mean speaker entropy: **0.7163** (normalized entropy: **0.8911**).
+- Mean dominant-speaker attention share: **0.6267**.
+- Dialogues with dominant speaker share > 0.70: **32%** (>0.80: **7%**).
+- Top-1 turn contribution inside top-3 turns: **57.94%** on average.
+- Summary-token grounding:
+  - top attended token mapped to a dialogue turn in **92.81%** of summary tokens,
+  - and to one of the sample’s top-3 turns in **82.37%** of summary tokens.
+
+**Why these outputs look this way**
+- Summarization compresses long dialogues into a few salient moments, so attention naturally concentrates on a small set of turns.
+- Entropy is still high overall (0.891 normalized), which indicates the model does not collapse to a single speaker in most conversations.
+- The remaining non-turn alignment comes from control/special tokens and generic connective words used during generation.
+
+### Task-02 — Quantization for Real-time Summarization at Scale
+**What was implemented**
+- Quantized T5-small LoRA with llama.cpp into `Q4_K_M`, `Q5_K_M`, `Q8_0`.
+- Benchmarked variable conversation lengths (10, 50, 100, 200 turns).
+- Compared streaming vs batch inference (latency, memory, ROUGE-L).
+- Benchmarked parallel inference on Mac M-series process counts: **1, 2, 4**.
+- Auto-generated deployment recommendation (`outputs/analysis/quantization/reports/deployment_guide.json`).
+
+**Core results**
+- Quantized model size:
+  - `Q4_K_M`: **40.18 MB**
+  - `Q5_K_M`: **44.15 MB**
+  - `Q8_0`: **62.34 MB**
+- ROUGE-L (batch): `Q4_K_M` **0.2981**, `Q5_K_M` **0.2983**, `Q8_0` **0.2910**.
+- Length=50 latency (sec): `Q4_K_M` **1.0236**, `Q5_K_M` **0.9356**, `Q8_0` **0.7332**.
+- Parallel throughput at 4 processes (samples/sec):
+  - `Q4_K_M`: **6.7349**
+  - `Q5_K_M`: **7.3373**
+  - `Q8_0`: **10.0262**
+- Streaming vs batch:
+  - ROUGE-L delta: **0.0** for all three quantization levels,
+  - mean peak memory in streaming is lower by ~**6.8–7.7 MB**,
+  - total latency is higher in streaming because each new chunk triggers re-generation.
+- Final recommendation:
+  - Throughput-first: `Q8_0` + 4 processes
+  - Quality-first realtime default: `Q5_K_M` + 4 processes
+
+**Why these outputs look this way**
+- Increasing process count gives near-linear throughput gains up to 4 workers, with some overhead at higher contention.
+- Streaming preserves quality because it reuses the same model and decoding setup; it mainly changes *when* generation is triggered.
+- Memory drops in streaming are expected because each decode step sees a shorter partial context than full-batch summarization.
+
+### Task-03 — Steering for Focus Control (Topic vs Action Items)
+**What was implemented**
+- Extracted decoder middle-layer activations (100 samples).
+- Computed a steering direction and injected it at inference time.
+- Evaluated scales: `0.0`, `0.5`, `1.0`, `1.5`, `2.0`, `3.0`.
+- Performed layer ablation and selected best steering layer(s).
+
+**Core results (50-sample evaluation set)**
+- Best scale: **1.5**
+- Best layer: **6**
+- Baseline (`scale=0.0`) ROUGE-L: **0.2740**
+- Best (`scale=1.5`) ROUGE-L: **0.2837** (no ROUGE drop under 2% constraint)
+- Action score improved from **0.1112** to **0.1817**.
+- Higher scales (`2.0`, `3.0`) raised action score further but violated quality guardrail (ROUGE drop **3.38%** and **5.46%**).
+
+**Why these outputs look this way**
+- Mild steering amplifies action-related dimensions without disrupting core semantic content.
+- Over-steering pushes generation off the base summary manifold, increasing action-biased words but hurting faithfulness/quality.
+- Layer 6 likely captures the most controllable abstraction between content planning and lexical realization for this setup.
+
+### Task-04 — Adversarial Transcripts & Robustness Testing
+**What was implemented**
+- Generated adversarial variants (overlap/noise/off-topic/length) and evaluated **150 original + 150 adversarial** samples.
+- Compared pre- vs post-adversarial retraining.
+- Produced failure mode breakdown (`outputs/analysis/robustness/failure_analysis/failures.json`).
+
+**Current results**
+- Adversarial ROUGE-L gain after retraining: **-0.1111** (drop).
+- Coherence gain: **+0.0033** (almost unchanged).
+- Action completeness gain: **-0.2533** (drop).
+- Clean-set ROUGE shift: **-0.1366**.
+- Failure analysis on adversarial split:
+  - failures: **79 / 150** (**52.7%**),
+  - most common failure types: `missing_key_info` (**61**), `wrong_entities` (**50**),
+  - strongest perturbation impact: `off_topic` (79 failures), then `overlap`/`length` (74 each), `noise` (73).
+
+**Why these outputs look this way**
+- Hard perturbations inject distractor content that competes with true salient turns, so entity tracking and key-info retention degrade first.
+- Coherence remains relatively stable because fluent surface form can stay intact even when factual content is wrong.
+- Negative post-training shift suggests the current adversarial fine-tuning setup still over-regularizes/overfits noisy patterns relative to clean summarization.
+
+### Task-05 — LoRA Rank Ablation & Structured Output Constraints
+**What was implemented**
+- Trained LoRA ranks: `2, 4, 8, 16, 32`.
+- Measured ROUGE-L, inference latency, and model size.
+- Compared free-form vs structured prompt generation.
+- Added a schema repair layer for strict JSON outputs.
+
+**Core results**
+- ROUGE-L by rank increased from **0.3361 (r2)** to **0.3490 (r32)**.
+- Model size increased from **17.03 MB (r2)** to **125.30 MB (r32)**.
+- Latency stayed in a narrow range (~**0.91s–1.14s** average/sample).
+- Raw structured JSON validity from the model: **0%** across all ranks.
+- Post-repair JSON validity: **100%** across all ranks (`validity_repaired.json`).
+- Structured vs free-form ROUGE delta remained negative (about **-0.0046** to **-0.0101**), with slightly lower output-length variance under structured prompts.
+- Final repaired report selects **rank 32** as best quality point.
+
+**Why these outputs look this way**
+- Higher LoRA rank increases adaptation capacity, but gains are gradual relative to size growth (diminishing returns).
+- Prompt-only schema enforcement is weak for T5-small in this setup; unconstrained decoding often violates strict JSON syntax.
+- A deterministic post-processing layer can guarantee production-safe JSON without retraining, at the cost of separating “model validity” from “system validity”.
+
+---
+All generated analysis artifacts are versioned under `outputs/analysis/*` so every claim above can be traced to exact files and rerun scripts in `src/Analysis/*`.
+
+## 🧠 Final Insights & Key Takeaways
+### 1) Model Behavior Understanding (Task-01)
+- The model does not uniformly attend to all speakers.
+- A small subset of dialogue turns contributes disproportionately to summaries.
+- Despite this, high entropy indicates the model still considers multiple speakers in most cases.
+
+👉 **Conclusion:**  
+The model is selective but not biased toward a single speaker, which is desirable for summarization tasks.
+
+### 2) Real-Time Deployment Feasibility (Task-02)
+- Quantization significantly improves inference speed with minimal quality drop.
+- `Q5_K_M` provides the best balance between quality and latency.
+- Parallel inference (4 processes) scales throughput effectively.
+
+👉 **Conclusion:**  
+Real-time summarization is achievable on consumer hardware (Mac M-series) using quantization + parallelization.
+
+### 3) Controllability of Summaries (Task-03)
+- Steering successfully increases action-oriented content.
+- Best trade-off is achieved at `scale = 1.5`, while staying within <2% ROUGE drop.
+- Over-steering degrades summary quality.
+
+👉 **Conclusion:**  
+Controlled generation is possible without retraining, but requires careful tuning to avoid quality degradation.
+
+### 4) Robustness to Real-world Noise (Task-04)
+- Model performance drops significantly on adversarial inputs.
+- Adversarial training did not improve robustness and degraded clean performance.
+
+👉 **Conclusion:**  
+T5-small has limited capacity to handle both clean and noisy data simultaneously. More advanced training strategies or larger models are needed.
+
+### 5) Efficiency vs Quality Trade-off (Task-05)
+- Increasing LoRA rank improves ROUGE but increases model size.
+- Structured generation alone fails (0% JSON validity).
+- Post-processing ensures 100% JSON validity without retraining.
+
+👉 **Conclusion:**  
+A hybrid approach (model + repair layer) is necessary for production-grade structured outputs.
+
 
 ## 🗂️ Repository Structure
 ```
@@ -125,6 +288,31 @@ python src/generate_plots.py
 ├── venv/                          # Virtual env (gitignored)
 ├── requirements.txt
 └── README.md
+```
+
+### 🧩 Additional Analysis Structure (new)
+```
+├── experiments/
+│   ├── t5_small_lora_r2/          # LoRA rank-2 checkpoint(s)
+│   ├── t5_small_lora_r4/          # LoRA rank-4 checkpoint(s)
+│   ├── t5_small_lora_r8/          # LoRA rank-8 checkpoint(s)
+│   ├── t5_small_lora_r16/         # LoRA rank-16 checkpoint(s)
+│   ├── t5_small_lora_r32/         # LoRA rank-32 checkpoint(s)
+│   └── t5_small_lora_robust/      # Adversarially trained checkpoint(s)
+├── src/
+│   └── Analysis/
+│       ├── attention/             # Task-01 (attention extraction + attribution)
+│       ├── quantization/          # Task-02 (gguf quantize + bench + reports)
+│       ├── steering/              # Task-03 (activation steering + evaluation)
+│       ├── robustness/            # Task-04 (adversarial data + robustness eval)
+│       └── rank_ablation/         # Task-05 (LoRA rank sweep + JSON constraints)
+└── outputs/
+    └── analysis/
+        ├── attention/             # Attention tensors, heatmaps, per-sample reports
+        ├── quantization/          # Batch/stream/parallel metrics + deployment reports
+        ├── steering/              # Activations, generated outputs, steering reports
+        ├── robustness/            # Predictions, failure analysis, final robustness report
+        └── rank_ablation/         # Rank metrics, latency/size, validity, final report
 ```
 
 ## 📥 Data
@@ -210,3 +398,9 @@ Note: checkpoints referenced in `path` should exist locally in `experiments/`; t
 
 ## 📜 License / Credits
 Built on Hugging Face Transformers, Datasets, and Streamlit; datasets: SAMSum (`knkarthick/samsum`). Add your license/credit note here as needed.
+
+## 🔮 Future Improvements
+- Use larger models (FLAN-T5-large / PEGASUS-large)
+- Improve adversarial training strategy (curriculum learning)
+- Replace post-processing with constrained decoding
+- Add human evaluation for summary quality

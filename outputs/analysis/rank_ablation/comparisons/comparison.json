@@ -1,0 +1,97 @@
+{
+  "r2": {
+    "num_samples": 819,
+    "free_form": {
+      "rougeL": 0.3606654367523022,
+      "json_validity": 0.0,
+      "length_variance": 68.97790121965946
+    },
+    "structured": {
+      "rougeL": 0.3560712053349394,
+      "json_validity": 0.0,
+      "length_variance": 63.19671537253954
+    },
+    "delta": {
+      "rougeL": -0.004594231417362815,
+      "json_validity": 0.0,
+      "length_variance": -5.7811858471199145
+    },
+    "status": "ok"
+  },
+  "r4": {
+    "num_samples": 819,
+    "free_form": {
+      "rougeL": 0.36284698799169446,
+      "json_validity": 0.0,
+      "length_variance": 60.92662215006538
+    },
+    "structured": {
+      "rougeL": 0.3554515213388219,
+      "json_validity": 0.0,
+      "length_variance": 60.681536344540014
+    },
+    "delta": {
+      "rougeL": -0.007395466652872551,
+      "json_validity": 0.0,
+      "length_variance": -0.2450858055253633
+    },
+    "status": "ok"
+  },
+  "r8": {
+    "num_samples": 819,
+    "free_form": {
+      "rougeL": 0.3622462850677868,
+      "json_validity": 0.0,
+      "length_variance": 64.18239283440748
+    },
+    "structured": {
+      "rougeL": 0.3524928688618092,
+      "json_validity": 0.0,
+      "length_variance": 61.228133418609616
+    },
+    "delta": {
+      "rougeL": -0.009753416205977583,
+      "json_validity": 0.0,
+      "length_variance": -2.954259415797864
+    },
+    "status": "ok"
+  },
+  "r16": {
+    "num_samples": 819,
+    "free_form": {
+      "rougeL": 0.3630733545072953,
+      "json_validity": 0.0,
+      "length_variance": 64.02901182388362
+    },
+    "structured": {
+      "rougeL": 0.3559157546539046,
+      "json_validity": 0.0,
+      "length_variance": 61.44528378960613
+    },
+    "delta": {
+      "rougeL": -0.00715759985339065,
+      "json_validity": 0.0,
+      "length_variance": -2.5837280342774918
+    },
+    "status": "ok"
+  },
+  "r32": {
+    "num_samples": 819,
+    "free_form": {
+      "rougeL": 0.37755377893170516,
+      "json_validity": 0.0,
+      "length_variance": 71.11050582845455
+    },
+    "structured": {
+      "rougeL": 0.3674797907664846,
+      "json_validity": 0.0,
+      "length_variance": 66.22799178843135
+    },
+    "delta": {
+      "rougeL": -0.010073988165220538,
+      "json_validity": 0.0,
+      "length_variance": -4.882514040023196
+    },
+    "status": "ok"
+  }
+}
