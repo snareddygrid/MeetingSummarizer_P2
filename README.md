@@ -67,6 +67,26 @@ Notes:
 - If you pulled checkpoints, you can stop here—no data download/preprocess needed for UI-only use.
 - Large folders `data/`, `outputs/`, `venv/` are gitignored; regenerate locally as needed.
 
+## ✅ Additional Setup for Task-01 to Task-05 (full analysis workflow)
+If you want to run all analysis tasks (not just the UI), the clone/setup needs a few extra prerequisites:
+
+```bash
+# 1) Python version (tested)
+python --version   # expected: Python 3.9.6
+
+# 2) Pull model artifacts tracked with LFS
+git lfs pull
+
+# 3) Prepare datasets used by analysis scripts
+python src/data_loader.py
+python src/preprocess.py
+```
+
+Task-specific prerequisites:
+- **Task-01 / Task-03 / Task-04 / Task-05:** require `data/raw`, `data/processed`, and the base LoRA checkpoint in `experiments/t5_small_lora`.
+- **Task-02 (quantization from scratch):** needs llama.cpp tools available (`convert_hf_to_gguf.py`, `llama-quantize`, and `llama-cli` in PATH or provided explicitly via CLI flags).
+  - If quantized artifacts already exist in `outputs/analysis/quantization/models/`, Task-02 report regeneration can run without rebuilding quantization.
+
 ## 🔁 Retraining (when you want to fine-tune again)
 ```bash
 # Download SAMSum
