@@ -88,6 +88,7 @@ python src/generate_plots.py
 ## 🧪 Advanced Analysis Tasks (Task-01 to Task-05)
 The project now includes a full analysis track under `src/Analysis/` with outputs written to `outputs/analysis/`.
 These tasks are designed to answer *why* the model behaves the way it does, not just produce a single ROUGE score.
+All training/evaluation hyperparameters are defined in the corresponding script defaults; the commands below keep CLI args minimal.
 
 ### Task-01 — Attention Patterns for Speaker Attribution & Key Moment Detection
 **What was implemented**
@@ -110,6 +111,12 @@ These tasks are designed to answer *why* the model behaves the way it does, not 
 - Summarization compresses long dialogues into a few salient moments, so attention naturally concentrates on a small set of turns.
 - Entropy is still high overall (0.891 normalized), which indicates the model does not collapse to a single speaker in most conversations.
 - The remaining non-turn alignment comes from control/special tokens and generic connective words used during generation.
+
+**Code reproducibility (Task-01)**
+```bash
+# End-to-end Task-01 pipeline
+python src/Analysis/attention/extract_attention.py
+```
 
 ### Task-02 — Quantization for Real-time Summarization at Scale
 **What was implemented**
@@ -143,6 +150,19 @@ These tasks are designed to answer *why* the model behaves the way it does, not 
 - Streaming preserves quality because it reuses the same model and decoding setup; it mainly changes *when* generation is triggered.
 - Memory drops in streaming are expected because each decode step sees a shorter partial context than full-batch summarization.
 
+**Code reproducibility (Task-02)**
+```bash
+# End-to-end Task-02 pipeline
+python src/Analysis/quantization/benchmark_inference.py \
+  --parallel-processes 1 2 4
+
+# Rebuild comparison report and validate outputs
+python src/Analysis/quantization/compare_results.py
+python src/Analysis/quantization/validate_quantization_results.py \
+  --expected-processes 1 2 4 \
+  --allow-partial-num-samples
+```
+
 ### Task-03 — Steering for Focus Control (Topic vs Action Items)
 **What was implemented**
 - Extracted decoder middle-layer activations (100 samples).
@@ -162,6 +182,16 @@ These tasks are designed to answer *why* the model behaves the way it does, not 
 - Mild steering amplifies action-related dimensions without disrupting core semantic content.
 - Over-steering pushes generation off the base summary manifold, increasing action-biased words but hurting faithfulness/quality.
 - Layer 6 likely captures the most controllable abstraction between content planning and lexical realization for this setup.
+
+**Code reproducibility (Task-03)**
+```bash
+# End-to-end Task-03 pipeline
+python src/Analysis/steering/steering_generate.py
+
+# To exactly match the reported extended scale sweep, rerun with:
+# python src/Analysis/steering/steering_generate.py --scales 0.0 0.5 1.0 1.5 2.0 3.0
+```
+This single command reproduces the Task-03 artifacts in `outputs/analysis/steering/`.
 
 ### Task-04 — Adversarial Transcripts & Robustness Testing
 **What was implemented**
@@ -184,6 +214,30 @@ These tasks are designed to answer *why* the model behaves the way it does, not 
 - Coherence remains relatively stable because fluent surface form can stay intact even when factual content is wrong.
 - Negative post-training shift suggests the current adversarial fine-tuning setup still over-regularizes/overfits noisy patterns relative to clean summarization.
 
+**Code reproducibility (Task-04)**
+```bash
+# 1) Build adversarial dataset
+python src/Analysis/robustness/create_adversarial_data.py
+
+# 2) Pre-training predictions (base LoRA model)
+python src/Analysis/robustness/generate_predictions.py
+
+# 3) Failure mode analysis on pre-training outputs
+python src/Analysis/robustness/failure_analysis.py
+
+# 4) Adversarial retraining (current robust setup)
+python src/Analysis/robustness/train_adversarial.py
+
+# 5) Post-training predictions (robust model)
+python src/Analysis/robustness/generate_predictions.py \
+  --model-dir experiments/t5_small_lora_robust \
+  --output-prefix post
+
+# 6) Pre/Post evaluation and final comparison report
+python src/Analysis/robustness/evaluate_robustness.py
+python src/Analysis/robustness/compare_results.py
+```
+
 ### Task-05 — LoRA Rank Ablation & Structured Output Constraints
 **What was implemented**
 - Trained LoRA ranks: `2, 4, 8, 16, 32`.
@@ -205,8 +259,36 @@ These tasks are designed to answer *why* the model behaves the way it does, not 
 - Prompt-only schema enforcement is weak for T5-small in this setup; unconstrained decoding often violates strict JSON syntax.
 - A deterministic post-processing layer can guarantee production-safe JSON without retraining, at the cost of separating “model validity” from “system validity”.
 
+**GitHub checkpoint note (Task-05)**
+- We intentionally keep only `experiments/t5_small_lora_r32/` (best model; referred to as `t5_small_lora_32`) in GitHub because rank-32 is the selected best model in this study.
+- Other Task-05 rank checkpoints (`r2`, `r4`, `r8`, `r16`) are treated as experiment artifacts and are not kept as primary GitHub model assets.
+
+**Code reproducibility (Task-05)**
+```bash
+# A) Full rank-ablation reproduction (requires training ranks 2/4/8/16/32)
+python src/Analysis/rank_ablation/train_lora_ranks.py
+python src/Analysis/rank_ablation/evaluate_ranks.py
+python src/Analysis/rank_ablation/measure_latency.py
+python src/Analysis/rank_ablation/measure_model_size.py
+python src/Analysis/rank_ablation/structured_inference.py
+python src/Analysis/rank_ablation/evaluate_json_validity.py
+python src/Analysis/rank_ablation/compare_modes.py
+
+# B) Fast report regeneration from existing outputs (no retraining)
+python src/Analysis/rank_ablation/repair_structured_outputs.py
+python src/Analysis/rank_ablation/evaluate_json_validity.py \
+  --structured-dir outputs/analysis/rank_ablation/structured_outputs_repaired \
+  --output-path outputs/analysis/rank_ablation/validity/validity_repaired.json
+```
+
 ---
 All generated analysis artifacts are versioned under `outputs/analysis/*` so every claim above can be traced to exact files and rerun scripts in `src/Analysis/*`.
+
+**GitHub artifact notes for the other tasks**
+- **Task-01:** code and structured reports are kept; large raw attention tensors/heatmaps are reproducible outputs.
+- **Task-02:** code, deployment reports, and benchmark summaries are kept; heavy model binaries are managed separately (LFS/local artifacts).
+- **Task-03:** code and final reports are kept; activation tensors are reproducible and can be regenerated via the command above.
+- **Task-04:** code, failure analysis, and robustness reports are kept; regenerated predictions can be produced from scripts in `src/Analysis/robustness/`.
 
 ## 🧠 Final Insights & Key Takeaways
 ### 1) Model Behavior Understanding (Task-01)
